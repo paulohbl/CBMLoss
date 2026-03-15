@@ -17,6 +17,7 @@ def parse_args():
     parser.add_argument("--dataset", type=str, choices=["mock", "synthetic_leaf", "cub200"], default="mock",
                         help="Choose which dataset to run (run download_datasets.py first for real data).")
     parser.add_argument("--backbone", type=str, default="resnet18", help="Pretrained backbone")
+    parser.add_argument("--pretrained", action="store_true", default=True, help="Use pre-trained ResNet weights from ImageNet (Highly Recommended)")
     
     # Loss Regularization Hyperparameters (The Contribution)
     parser.add_argument("--lambda_concept", type=float, default=1.0, help="Weight for Concept BCELoss")
@@ -57,7 +58,7 @@ def main():
     
     # 2. Initialize Model
     print("Initializing Model...")
-    model = ConceptBottleneckModel(num_concepts=num_concepts, num_classes=num_classes, backbone_name=args.backbone, pretrained=False)
+    model = ConceptBottleneckModel(num_concepts=num_concepts, num_classes=num_classes, backbone_name=args.backbone, pretrained=args.pretrained)
     model = model.to(device)
     
     # 3. Setup Loss and Optimizer
