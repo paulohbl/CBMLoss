@@ -87,6 +87,7 @@ def download_and_prepare_cub200(base_dir="data/CUB_200_2011"):
         
         images = pd.read_csv(os.path.join(base_dir, "images.txt"), sep=' ', names=['img_id', 'image_name'])
         labels = pd.read_csv(os.path.join(base_dir, "image_class_labels.txt"), sep=' ', names=['img_id', 'label'])
+        labels['label'] = labels['label'] - 1  # Convert 1-indexed to 0-indexed for PyTorch
         splits = pd.read_csv(os.path.join(base_dir, "train_test_split.txt"), sep=' ', names=['img_id', 'is_train'])
         
         # Load attributes (img_id, attr_id, is_present, certainty, time)
