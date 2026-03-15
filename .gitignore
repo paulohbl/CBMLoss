@@ -1,0 +1,21 @@
+# Dataset
+data/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Weights & Biases
+wandb/
+.wandb/
+
+# Ide and OS files
+.vscode/
+.idea/
+.DS_Store
+
+# Virtual Environments
+venv/
+env/
+.env/
