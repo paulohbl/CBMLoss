@@ -77,7 +77,34 @@ class Trainer:
         }
         return metrics
 
+    def save_checkpoint(self, epoch: int, path: str, scheduler=None):
+        checkpoint = {
+            'epoch': epoch,
+            'model_state_dict': self.model.state_dict(),
+            'optimizer_state_dict': self.optimizer.state_dict(),
+        }
+        if scheduler:
+            checkpoint['scheduler_state_dict'] = scheduler.state_dict()
+            
+        torch.save(checkpoint, path)
+        print(f"Checkpoint saved to {path}")
+
+    def load_checkpoint(self, path: str, scheduler=None):
+        if not torch.cuda.is_available():
+            checkpoint = torch.load(path, map_location=torch.device('cpu'))
+        else:
+            checkpoint = torch.load(path)
+            
+        self.model.load_state_dict(checkpoint['model_state_dict'])
+        self.optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
+        if scheduler and 'scheduler_state_dict' in checkpoint:
+            scheduler.load_state_dict(checkpoint['scheduler_state_dict'])
+            
+        print(f"Checkpoint loaded from {path} (Epoch {checkpoint['epoch']})")
+        return checkpoint['epoch']
+
     def fit(self, train_loader, val_loader, epochs: int = 10, project_name: str = "cbm-leakage-mitigation"):
+        # This method is kept for backward compatibility or simple runs
         wandb.init(project=project_name, config={"epochs": epochs})
         wandb.config.update({"model": self.model.__class__.__name__})
         

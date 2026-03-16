@@ -78,9 +78,18 @@ def get_dataloaders(dataset_name: str, batch_size: int = 32):
     """
     Returns train_loader, val_loader, num_concepts, num_classes
     """
-    # Base transforms for ResNet
-    transform = transforms.Compose([
-        transforms.Resize((224, 224)),
+    # 1. Training Augmentation
+    train_transform = transforms.Compose([
+        transforms.RandomResizedCrop(224),
+        transforms.RandomHorizontalFlip(),
+        transforms.ToTensor(),
+        transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+    ])
+    
+    # 2. Validation / Test Transforms
+    val_transform = transforms.Compose([
+        transforms.Resize(256),
+        transforms.CenterCrop(224),
         transforms.ToTensor(),
         transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
     ])
@@ -93,22 +102,22 @@ def get_dataloaders(dataset_name: str, batch_size: int = 32):
         
     elif dataset_name == "synthetic_leaf":
         data_dir = "data/synthetic_leaf"
-        train_ds = DiskConceptDataset(data_dir, "train.csv", transform=transform)
-        val_ds = DiskConceptDataset(data_dir, "val.csv", transform=transform)
+        train_ds = DiskConceptDataset(data_dir, "train.csv", transform=train_transform)
+        val_ds = DiskConceptDataset(data_dir, "val.csv", transform=val_transform)
         num_concepts = train_ds.num_concepts
         num_classes = 2
         
     elif dataset_name == "cub200":
         data_dir = "data/CUB_200_2011"
-        train_ds = DiskConceptDataset(data_dir, "train.csv", transform=transform)
-        val_ds = DiskConceptDataset(data_dir, "val.csv", transform=transform)
+        train_ds = DiskConceptDataset(data_dir, "train.csv", transform=train_transform)
+        val_ds = DiskConceptDataset(data_dir, "val.csv", transform=val_transform)
         num_concepts = train_ds.num_concepts
         num_classes = 200 # CUB has 200 bird species
         
     else:
         raise ValueError(f"Unknown dataset: {dataset_name}")
         
-    train_loader = DataLoader(train_ds, batch_size=batch_size, shuffle=True, num_workers=0)
-    val_loader = DataLoader(val_ds, batch_size=batch_size, shuffle=False, num_workers=0)
+    train_loader = DataLoader(train_ds, batch_size=batch_size, shuffle=True, num_workers=2)
+    val_loader = DataLoader(val_ds, batch_size=batch_size, shuffle=False, num_workers=2)
     
     return train_loader, val_loader, num_concepts, num_classes

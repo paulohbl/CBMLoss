@@ -27,11 +27,12 @@ class LabelPredictor(nn.Module):
     """
     Predicts final class logits strictly from the predicted concepts.
     """
-    def __init__(self, num_concepts: int, num_classes: int, hidden_dim: int = 64):
+    def __init__(self, num_concepts: int, num_classes: int, hidden_dim: int = 512):
         super().__init__()
         self.mlp = nn.Sequential(
             nn.Linear(num_concepts, hidden_dim),
             nn.ReLU(),
+            nn.Dropout(0.2),
             nn.Linear(hidden_dim, num_classes)
         )
 
