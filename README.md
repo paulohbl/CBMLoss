@@ -88,6 +88,12 @@ Se a acurácia subir drasticamente com a intervenção, o modelo é um CBM robus
 
 ---
 
-## 📈 Monitoramento (WandB)
+## 📓 Pesquisa e Insights Científicos
+
+Para uma análise detalhada sobre o fenômeno de **Concept Leakage**, o **Trade-off de Interpretabilidade** e como interpretar os gráficos de intervenção gerados para o artigo do SIBGRAPI, consulte o arquivo:
+
+---
+
+## 📊 Monitoramento (WandB)
 
 O framework é integrado ao Weights & Biases. Você pode acompanhar as perdas de cada componente (`loss/leakage_entropy`, `loss/leakage_ortho`, etc.) em tempo real pelo dashboard.

@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from tqdm import tqdm
 
-def evaluate_concept_intervention(model: torch.nn.Module, dataloader, device: torch.device, intervention_rates: list = None):
+def evaluate_concept_intervention(model: torch.nn.Module, dataloader, device: torch.device, intervention_rates: list = None, plot_path: str = "intervention_results.png"):
     """
     Evaluates Concept Leakage by intervening on a percentage of predicted concepts.
     Replaces predicted concepts (c_hat) with ground truth concepts (c) before passing
@@ -63,7 +63,7 @@ def evaluate_concept_intervention(model: torch.nn.Module, dataloader, device: to
     plt.grid(True, linestyle='--', alpha=0.7)
     plt.ylim(0, 1.05)
     
-    plt.savefig("intervention_results.png", dpi=300)
-    print("Plot saved as 'intervention_results.png'")
+    plt.savefig(plot_path, dpi=300)
+    print(f"Plot saved as '{plot_path}'")
     
     return df
