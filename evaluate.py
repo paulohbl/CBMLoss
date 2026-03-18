@@ -99,9 +99,14 @@ def evaluate_concept_intervention(model: torch.nn.Module, dataloader, device: to
     plt.savefig(plot_path, dpi=300, bbox_inches='tight')
     print(f"Comparison Plot saved as '{plot_path}'")
     
-    # Return a dataframe for summary
-    return pd.DataFrame({
+    # Save CSV for easy copy-pasting to paper tables
+    csv_path = plot_path.replace(".png", ".csv")
+    df = pd.DataFrame({
         "Rate": intervention_rates,
         "Random_Acc": all_results["Random"],
         "Uncertainty_Acc": all_results["Uncertainty"]
     })
+    df.to_csv(csv_path, index=False)
+    print(f"Results table saved as CSV: '{csv_path}'")
+    
+    return df

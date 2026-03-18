@@ -176,6 +176,9 @@ def main():
     plot_path = os.path.join(args.checkpoint_dir, plot_name)
     df = evaluate_concept_intervention(model, val_loader, device=device, plot_path=plot_path)
     
+    # Log Table to WandB
+    wandb.log({"intervention_analysis": wandb.Table(dataframe=df)})
+    
     print("\nIntervention Results Comparison:")
     print(df.to_string(index=False))
     
