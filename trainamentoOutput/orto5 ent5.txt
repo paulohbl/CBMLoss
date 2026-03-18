@@ -1,0 +1,338 @@
+Random seed set to: 42
+=== Starting CBMLoss Framework Test on CUB200 Dataset ===
+Using device: cuda
+Loading dataloaders for cub200...
+Dataset specs | Concepts: 312 | Classes: 200
+Initializing Model...
+Setting up Loss -> lambda_ent: 0.5, lambda_ortho: 0.5
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /root/.netrc.
+wandb: Currently logged in as: paulohbl to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+ccwandb: ⢿ Waiting for wandb.init()...
+wandb: ⣻ Waiting for wandb.init()...
+wandb: ⣽ setting up run v5qil4re (0.2s)
+wandb: ⣾ setting up run v5qil4re (0.2s)
+wandb: ⣷ setting up run v5qil4re (0.2s)
+wandb: ⣯ setting up run v5qil4re (0.2s)
+wandb: ⣟ setting up run v5qil4re (0.2s)
+wandb: ⡿ setting up run v5qil4re (0.7s)
+wandb: ⢿ setting up run v5qil4re (0.7s)
+wandb: ⣻ setting up run v5qil4re (0.7s)
+wandb: ⣽ setting up run v5qil4re (0.7s)
+wandb: ⣾ setting up run v5qil4re (0.7s)
+wandb: ⣷ setting up run v5qil4re (1.2s)
+wandb: ⣯ setting up run v5qil4re (1.2s)
+wandb: Tracking run with wandb version 0.25.1
+wandb: Run data is saved locally in /content/CBMLoss/wandb/run-20260317_190630-v5qil4re
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run cub200_resnet18_ent0.5_ortho0.5_seed42
+wandb: ⭐️ View project at https://wandb.ai/paulohbl/cbm-leakage-mitigation
+wandb: 🚀 View run at https://wandb.ai/paulohbl/cbm-leakage-mitigation/runs/v5qil4re
+Training Model: cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42...
+Epoch 1/100 | LR: 0.000100
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_best.pth
+--> New Best Model! Val Acc: 0.0109
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 5.8290 | Task Acc: 0.0109 | Concept Acc: 0.9032
+Epoch 2/100 | LR: 0.000100
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_best.pth
+--> New Best Model! Val Acc: 0.0309
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 5.6421 | Task Acc: 0.0309 | Concept Acc: 0.9038
+Epoch 3/100 | LR: 0.000100
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_best.pth
+--> New Best Model! Val Acc: 0.0784
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 5.6077 | Task Acc: 0.0784 | Concept Acc: 0.9039
+Epoch 4/100 | LR: 0.000100
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_best.pth
+--> New Best Model! Val Acc: 0.0868
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 5.5136 | Task Acc: 0.0868 | Concept Acc: 0.9037
+Epoch 5/100 | LR: 0.000100
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_best.pth
+--> New Best Model! Val Acc: 0.1205
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 5.2846 | Task Acc: 0.1205 | Concept Acc: 0.8997
+Epoch 6/100 | LR: 0.000100
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_best.pth
+--> New Best Model! Val Acc: 0.1284
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 4.9700 | Task Acc: 0.1284 | Concept Acc: 0.8944
+Epoch 7/100 | LR: 0.000100
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_best.pth
+--> New Best Model! Val Acc: 0.1650
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 4.6847 | Task Acc: 0.1650 | Concept Acc: 0.8929
+Epoch 8/100 | LR: 0.000100
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_best.pth
+--> New Best Model! Val Acc: 0.1962
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 4.4584 | Task Acc: 0.1962 | Concept Acc: 0.8920
+Epoch 9/100 | LR: 0.000100
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_best.pth
+--> New Best Model! Val Acc: 0.2465
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 4.2459 | Task Acc: 0.2465 | Concept Acc: 0.8905
+Epoch 10/100 | LR: 0.000100
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_best.pth
+--> New Best Model! Val Acc: 0.2806
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 4.0655 | Task Acc: 0.2806 | Concept Acc: 0.8895
+Epoch 11/100 | LR: 0.000100
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_best.pth
+--> New Best Model! Val Acc: 0.3492
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 3.8460 | Task Acc: 0.3492 | Concept Acc: 0.8867
+Epoch 12/100 | LR: 0.000100
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 3.7080 | Task Acc: 0.3471 | Concept Acc: 0.8874
+Epoch 13/100 | LR: 0.000100
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_best.pth
+--> New Best Model! Val Acc: 0.3914
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 3.5379 | Task Acc: 0.3914 | Concept Acc: 0.8881
+Epoch 14/100 | LR: 0.000100
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_best.pth
+--> New Best Model! Val Acc: 0.4247
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 3.4004 | Task Acc: 0.4247 | Concept Acc: 0.8884
+Epoch 15/100 | LR: 0.000100
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_best.pth
+--> New Best Model! Val Acc: 0.4443
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 3.2778 | Task Acc: 0.4443 | Concept Acc: 0.8881
+Epoch 16/100 | LR: 0.000100
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_best.pth
+--> New Best Model! Val Acc: 0.4758
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 3.1569 | Task Acc: 0.4758 | Concept Acc: 0.8887
+Epoch 17/100 | LR: 0.000100
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_best.pth
+--> New Best Model! Val Acc: 0.4874
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 3.0340 | Task Acc: 0.4874 | Concept Acc: 0.8890
+Epoch 18/100 | LR: 0.000100
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_best.pth
+--> New Best Model! Val Acc: 0.5192
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 2.8978 | Task Acc: 0.5192 | Concept Acc: 0.8905
+Epoch 19/100 | LR: 0.000100
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_best.pth
+--> New Best Model! Val Acc: 0.5364
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 2.8212 | Task Acc: 0.5364 | Concept Acc: 0.8903
+Epoch 20/100 | LR: 0.000100
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_best.pth
+--> New Best Model! Val Acc: 0.5492
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 2.7253 | Task Acc: 0.5492 | Concept Acc: 0.8916
+Epoch 21/100 | LR: 0.000010
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_best.pth
+--> New Best Model! Val Acc: 0.5939
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 2.5751 | Task Acc: 0.5939 | Concept Acc: 0.8901
+Epoch 22/100 | LR: 0.000010
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_best.pth
+--> New Best Model! Val Acc: 0.5953
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 2.5193 | Task Acc: 0.5953 | Concept Acc: 0.8894
+Epoch 23/100 | LR: 0.000010
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_best.pth
+--> New Best Model! Val Acc: 0.6046
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 2.5246 | Task Acc: 0.6046 | Concept Acc: 0.8893
+Epoch 24/100 | LR: 0.000010
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_best.pth
+--> New Best Model! Val Acc: 0.6096
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 2.4989 | Task Acc: 0.6096 | Concept Acc: 0.8889
+Epoch 25/100 | LR: 0.000010
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_best.pth
+--> New Best Model! Val Acc: 0.6141
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 2.4767 | Task Acc: 0.6141 | Concept Acc: 0.8891
+Epoch 26/100 | LR: 0.000010
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 2.4796 | Task Acc: 0.6136 | Concept Acc: 0.8890
+Epoch 27/100 | LR: 0.000010
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_best.pth
+--> New Best Model! Val Acc: 0.6205
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 2.4564 | Task Acc: 0.6205 | Concept Acc: 0.8888
+Epoch 28/100 | LR: 0.000010
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_best.pth
+--> New Best Model! Val Acc: 0.6224
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 2.4451 | Task Acc: 0.6224 | Concept Acc: 0.8885
+Epoch 29/100 | LR: 0.000010
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_best.pth
+--> New Best Model! Val Acc: 0.6229
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 2.4112 | Task Acc: 0.6229 | Concept Acc: 0.8887
+Epoch 30/100 | LR: 0.000010
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_best.pth
+--> New Best Model! Val Acc: 0.6267
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 2.4161 | Task Acc: 0.6267 | Concept Acc: 0.8887
+Epoch 31/100 | LR: 0.000010
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 2.4054 | Task Acc: 0.6210 | Concept Acc: 0.8884
+Epoch 32/100 | LR: 0.000010
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 2.3686 | Task Acc: 0.6246 | Concept Acc: 0.8883
+Epoch 33/100 | LR: 0.000010
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_best.pth
+--> New Best Model! Val Acc: 0.6353
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 2.3900 | Task Acc: 0.6353 | Concept Acc: 0.8891
+Epoch 34/100 | LR: 0.000010
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 2.3568 | Task Acc: 0.6310 | Concept Acc: 0.8890
+Epoch 35/100 | LR: 0.000010
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 2.3432 | Task Acc: 0.6327 | Concept Acc: 0.8887
+Epoch 36/100 | LR: 0.000010
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_best.pth
+--> New Best Model! Val Acc: 0.6362
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 2.3499 | Task Acc: 0.6362 | Concept Acc: 0.8891
+Epoch 37/100 | LR: 0.000010
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 2.3293 | Task Acc: 0.6348 | Concept Acc: 0.8887
+Epoch 38/100 | LR: 0.000010
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_best.pth
+--> New Best Model! Val Acc: 0.6370
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 2.3262 | Task Acc: 0.6370 | Concept Acc: 0.8892
+Epoch 39/100 | LR: 0.000010
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_best.pth
+--> New Best Model! Val Acc: 0.6377
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 2.2966 | Task Acc: 0.6377 | Concept Acc: 0.8891
+Epoch 40/100 | LR: 0.000010
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 2.3207 | Task Acc: 0.6376 | Concept Acc: 0.8889
+Epoch 41/100 | LR: 0.000001
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 2.2974 | Task Acc: 0.6372 | Concept Acc: 0.8890
+Epoch 42/100 | LR: 0.000001
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_best.pth
+--> New Best Model! Val Acc: 0.6388
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 2.2887 | Task Acc: 0.6388 | Concept Acc: 0.8889
+Epoch 43/100 | LR: 0.000001
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_best.pth
+--> New Best Model! Val Acc: 0.6391
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 2.3168 | Task Acc: 0.6391 | Concept Acc: 0.8885
+Epoch 44/100 | LR: 0.000001
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 2.2907 | Task Acc: 0.6372 | Concept Acc: 0.8889
+Epoch 45/100 | LR: 0.000001
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 2.2628 | Task Acc: 0.6389 | Concept Acc: 0.8892
+Epoch 46/100 | LR: 0.000001
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_best.pth
+--> New Best Model! Val Acc: 0.6431
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 2.3103 | Task Acc: 0.6431 | Concept Acc: 0.8891
+Epoch 47/100 | LR: 0.000001
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 2.3073 | Task Acc: 0.6398 | Concept Acc: 0.8890
+Epoch 48/100 | LR: 0.000001
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 2.2791 | Task Acc: 0.6427 | Concept Acc: 0.8888
+Epoch 49/100 | LR: 0.000001
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 2.2704 | Task Acc: 0.6401 | Concept Acc: 0.8887
+Epoch 50/100 | LR: 0.000001
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 2.2744 | Task Acc: 0.6415 | Concept Acc: 0.8890
+Epoch 51/100 | LR: 0.000001
+Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_latest.pth
+Train Loss: 2.2664 | Task Acc: 0.6431 | Concept Acc: 0.8889
+
+[Early Stopping] No improvement for 5 epochs. Terminating training.
+
+Loading best model for intervention evaluation...
+Checkpoint loaded from /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_best.pth (Epoch 46)
+wandb: ⢿ updating run metadata (0.0s)
+wandb: ⣻ updating run metadata (0.0s)
+wandb: ⣽ updating run metadata (0.0s)
+wandb: ⣾ updating run metadata (0.0s)
+wandb: ⣷ Finishing up...
+wandb: ⣯ Finishing up...
+wandb: ⣟ Finishing up...
+wandb: ⡿ Finishing up...
+wandb: ⢿ Finishing up...
+wandb: ⣻ uploading output.log 18.8KB/18.8KB (0.3s)
+wandb: ⣻ uploading wandb-summary.json 449B/449B (0.3s)
+wandb: ⣻ uploading config.yaml 2.8KB/2.8KB (0.3s)
+wandb: ⣽ uploading output.log 18.8KB/18.8KB (0.3s)
+wandb: ⣽ uploading wandb-summary.json 449B/449B (0.3s)
+wandb: ⣽ uploading config.yaml 2.8KB/2.8KB (0.3s)
+wandb: ⣾ uploading output.log 18.8KB/18.8KB (0.3s)
+wandb: ⣾ uploading wandb-summary.json 449B/449B (0.3s)
+wandb: ⣾ uploading config.yaml 2.8KB/2.8KB (0.3s)
+wandb: ⣷ uploading output.log 18.8KB/18.8KB (0.3s)
+wandb: ⣷ uploading wandb-summary.json 449B/449B (0.3s)
+wandb: ⣷ uploading config.yaml 2.8KB/2.8KB (0.3s)
+wandb: ⣯ uploading output.log 18.8KB/18.8KB (0.3s)
+wandb: ⣯ uploading wandb-summary.json 449B/449B (0.3s)
+wandb: ⣯ uploading config.yaml 2.8KB/2.8KB (0.3s)
+wandb: ⣟ uploading wandb-summary.json 449B/449B (0.8s)
+wandb: ⣟ uploading config.yaml 2.8KB/2.8KB (0.8s)
+wandb: ⡿ uploading wandb-summary.json 449B/449B (0.8s)
+wandb: ⡿ uploading config.yaml 2.8KB/2.8KB (0.8s)
+wandb: ⢿ uploading wandb-summary.json 449B/449B (0.8s)
+wandb: ⢿ uploading config.yaml 2.8KB/2.8KB (0.8s)
+wandb: ⣻ uploading wandb-summary.json 449B/449B (0.8s)
+wandb: ⣻ uploading config.yaml 2.8KB/2.8KB (0.8s)
+wandb: ⣽ uploading wandb-summary.json 449B/449B (0.8s)
+wandb: ⣽ uploading config.yaml 2.8KB/2.8KB (0.8s)
+wandb: ⣾ uploading config.yaml 2.8KB/2.8KB (1.3s)
+wandb: ⣷ uploading config.yaml 2.8KB/2.8KB (1.3s)
+wandb: ⣯ uploading config.yaml 2.8KB/2.8KB (1.3s)
+wandb: ⣟ uploading config.yaml 2.8KB/2.8KB (1.3s)
+wandb: ⡿ uploading config.yaml 2.8KB/2.8KB (1.3s)
+wandb: 
+wandb: Run history:
+wandb:             best_val_acc ▁▁▂▂▂▃▃▄▄▅▆▆▆▇▇▇▇███████████████████████
+wandb:                    epoch ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▆▇▇▇▇▇▇███
+wandb:    loss/concept_fidelity █▂▂▁▁▁▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂
+wandb:     loss/leakage_entropy █▁▁▁▂▃▃▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅
+wandb:       loss/leakage_ortho ▁▁▂▄▅▆▆▇▇██████▇████████████████████████
+wandb: loss/task_classification ████▇▆▅▅▄▄▃▃▃▃▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:               loss/total ███▇▇▆▅▅▄▄▃▃▃▃▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:                       lr ███████████████▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁
+wandb:     val/concept_accuracy ████▆▃▃▂▁▁▂▂▂▂▃▃▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂
+wandb:        val/task_accuracy ▁▁▂▂▂▃▃▄▄▅▅▆▆▆▆▇▇▇▇█████████████████████
+wandb: 
+wandb: Run summary:
+wandb:             best_val_acc 0.64308
+wandb:                    epoch 51
+wandb:    loss/concept_fidelity 0.26012
+wandb:     loss/leakage_entropy 0.25851
+wandb:       loss/leakage_ortho 0.41573
+wandb: loss/task_classification 1.66921
+wandb:               loss/total 2.26645
+wandb:                       lr 0.0
+wandb:     val/concept_accuracy 0.88886
+wandb:        val/task_accuracy 0.64308
+wandb: 
+wandb: 🚀 View run cub200_resnet18_ent0.5_ortho0.5_seed42 at: https://wandb.ai/paulohbl/cbm-leakage-mitigation/runs/v5qil4re
+wandb: ⭐️ View project at: https://wandb.ai/paulohbl/cbm-leakage-mitigation
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260317_190630-v5qil4re/logs
+Evaluating Causal Concept Intervention...
+Plot saved as '/content/drive/My Drive/CBMLoss_Checkpoints/intervention_cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_best_val_acc0.6431.png'
+
+Intervention Results:
+   Intervention Rate  Task Accuracy
+0                0.0       0.643079
+1                0.2       0.580255
+2                0.4       0.457887
+3                0.6       0.308768
+4                0.8       0.190197
+5                1.0       0.114946
+=== Pipeline Test Complete ===

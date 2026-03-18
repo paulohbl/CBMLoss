@@ -44,7 +44,20 @@ Para gerar os gráficos definitivos do artigo, o protocolo sugerido é:
 
 ---
 
-## 5. Dicas de Engenharia
+## 6. Comparativo de Experimentos (0.1 vs 0.5)
 
-- **Pretrained Weights**: Essencial para o CUB-200. Sem pesos pré-treinados (ImageNet), o modelo levaria centenas de épocas apenas para aprender a distinguir penas de galhos.
-- **Data Augmentation**: O uso de `RandomResizedCrop` foi o fator decisivo para eliminar o efeito "dente de serra" (instabilidade) observado nos primeiros gráficos.
+Analisamos os dois treinamentos recentes no CUB-200. Ambos usaram a semente 42 e o ResNet18 pré-treinado:
+
+| Métrica | Lambda 0.1 / 0.1 | Lambda 0.5 / 0.5 | Impacto |
+| :--- | :---: | :---: | :--- |
+| **Melhor Task Acc** | 72.35% (E51) | 64.31% (E46) | **-8.04%** (Trade-off) |
+| **Concept Acc** | 88.38% | 88.88% | **+0.50%** (Mais estável) |
+| **Ortho Loss** | 1.69986 | **0.41573** | **-75%** (Conceitos Limpos) |
+| **Entropy Loss** | 0.34678 | **0.25851** | **-25%** (Mais Binário) |
+| **Intervenção (Rate 1.0)** | 8.94% | 11.49% | **+2.55%** (Menos Frágil) |
+
+### Conclusões Recentes:
+1.  **Acurácia vs. Interpretabilidade**: O modelo 0.5 é 8% menos acurado na tarefa, mas suas representações internas são **75% mais independentes** (ortogonais). 
+2.  **Resiliência Causal**: No modelo 0.1, a queda na intervenção foi de de 72% para 9% (**delta 63%**). No modelo 0.5, a queda foi de 64% para 11% (**delta 53%**). O modelo 0.5 é "menos mentiroso", embora o vazamento ainda persista.
+3.  **Sucesso do Early Stopping**: Ambos os modelos pararam após 5 épocas sem melhoria, economizando recursos importantes. Isso prova que 50-60 épocas são o ponto de saturação para o ResNet18 no CUB-200 sob estas condições.
+4.  **O "Próximo Passo" Científico**: Para o artigo, o modelo 0.5 é mais forte, pois você pode argumentar que sacrificou performance bruta por uma estrutura semântica muito mais organizada (Ortho Loss 0.4 vs 1.6).
