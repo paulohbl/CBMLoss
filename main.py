@@ -170,15 +170,16 @@ def main():
     wandb.finish()
     
     # 6. Evaluate Concept Intervention
-    print("Evaluating Causal Concept Intervention...")
-    # Include total epochs in image name for better comparison
-    plot_name = f"intervention_{full_run_name}_best_val_acc{best_val_acc:.4f}.png"
+    print("Evaluating Causal Concept Intervention (Dual Mode: Random vs Uncertainty)...")
+    # Include total epochs and best accuracy in image name
+    plot_name = f"intervention_{full_run_name}_best_acc{best_val_acc:.4f}.png"
     plot_path = os.path.join(args.checkpoint_dir, plot_name)
     df = evaluate_concept_intervention(model, val_loader, device=device, plot_path=plot_path)
-    print("\nIntervention Results:")
-    print(df)
     
-    print("=== Pipeline Test Complete ===")
+    print("\nIntervention Results Comparison:")
+    print(df.to_string(index=False))
+    
+    print("\n=== Pipeline Test Complete ===")
 
 if __name__ == "__main__":
     main()
