@@ -4,24 +4,40 @@ Using device: cuda
 Loading dataloaders for cub200...
 Dataset specs | Concepts: 312 | Classes: 200
 Initializing Model...
+Downloading: "https://download.pytorch.org/models/resnet18-f37072fd.pth" to /root/.cache/torch/hub/checkpoints/resnet18-f37072fd.pth
+100% 44.7M/44.7M [00:00<00:00, 199MB/s]
 Setting up Loss -> lambda_ent: 0.3, lambda_ortho: 0.3
-wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /root/.netrc.
+wandb: (1) Create a W&B account
+wandb: (2) Use an existing W&B account
+wandb: (3) Don't visualize my results
+wandb: Enter your choice: 2
+wandb: You chose 'Use an existing W&B account'
+wandb: Logging into https://api.wandb.ai. (Learn how to deploy a W&B server locally: https://wandb.me/wandb-server)
+wandb: Create a new API key at: https://wandb.ai/authorize?ref=models
+wandb: Store your API key securely and do not share it.
+wandb: Paste your API key and hit enter: 
+wandb: No netrc file found, creating one.
+wandb: Appending key for api.wandb.ai to your netrc file: /root/.netrc
 wandb: Currently logged in as: paulohbl to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
 ccwandb: ⢿ Waiting for wandb.init()...
-wandb: ⣻ setting up run fo1d4x51 (0.2s)
-wandb: ⣽ setting up run fo1d4x51 (0.2s)
-wandb: ⣾ setting up run fo1d4x51 (0.2s)
-wandb: ⣷ setting up run fo1d4x51 (0.2s)
-wandb: ⣯ setting up run fo1d4x51 (0.2s)
-wandb: ⣟ setting up run fo1d4x51 (0.7s)
-wandb: ⡿ setting up run fo1d4x51 (0.7s)
-wandb: ⢿ setting up run fo1d4x51 (0.7s)
+wandb: ⣻ setting up run ncc0ed4n (0.2s)
+wandb: ⣽ setting up run ncc0ed4n (0.2s)
+wandb: ⣾ setting up run ncc0ed4n (0.2s)
+wandb: ⣷ setting up run ncc0ed4n (0.2s)
+wandb: ⣯ setting up run ncc0ed4n (0.2s)
+wandb: ⣟ setting up run ncc0ed4n (0.7s)
+wandb: ⡿ setting up run ncc0ed4n (0.7s)
+wandb: ⢿ setting up run ncc0ed4n (0.7s)
+wandb: ⣻ setting up run ncc0ed4n (0.7s)
+wandb: ⣽ setting up run ncc0ed4n (0.7s)
+wandb: ⣾ setting up run ncc0ed4n (1.2s)
+wandb: ⣷ setting up run ncc0ed4n (1.2s)
 wandb: Tracking run with wandb version 0.25.1
-wandb: Run data is saved locally in /content/CBMLoss/wandb/run-20260317_212015-fo1d4x51
+wandb: Run data is saved locally in /content/CBMLoss/wandb/run-20260327_144714-ncc0ed4n
 wandb: Run `wandb offline` to turn off syncing.
 wandb: Syncing run cub200_resnet18_ent0.3_ortho0.3_seed42
 wandb: ⭐️ View project at https://wandb.ai/paulohbl/cbm-leakage-mitigation
-wandb: 🚀 View run at https://wandb.ai/paulohbl/cbm-leakage-mitigation/runs/fo1d4x51
+wandb: 🚀 View run at https://wandb.ai/paulohbl/cbm-leakage-mitigation/runs/ncc0ed4n
 Training Model: cub200_resnet18_ent0.3_ortho0.3_seed42_cub200_resnet18_ent0.3_ortho0.3_seed42...
 Epoch 1/100 | LR: 0.000100
 Checkpoint saved to /content/drive/My Drive/CBMLoss_Checkpoints/cub200_resnet18_ent0.3_ortho0.3_seed42_cub200_resnet18_ent0.3_ortho0.3_seed42_best.pth
@@ -234,39 +250,210 @@ wandb: ⢿ updating run metadata (0.0s)
 wandb: ⣻ updating run metadata (0.0s)
 wandb: ⣽ updating run metadata (0.0s)
 wandb: ⣾ updating run metadata (0.0s)
-wandb: ⣷ Finishing up...
-wandb: ⣯ Finishing up...
-wandb: ⣟ Finishing up...
-wandb: ⡿ Finishing up...
-wandb: ⢿ Finishing up...
-wandb: ⣻ uploading output.log 17.0KB/17.0KB (0.4s)
-wandb: ⣻ uploading wandb-summary.json 442B/442B (0.4s)
-wandb: ⣻ uploading config.yaml 2.8KB/2.8KB (0.4s)
-wandb: ⣽ uploading output.log 17.0KB/17.0KB (0.4s)
-wandb: ⣽ uploading wandb-summary.json 442B/442B (0.4s)
-wandb: ⣽ uploading config.yaml 2.8KB/2.8KB (0.4s)
-wandb: ⣾ uploading output.log 17.0KB/17.0KB (0.4s)
-wandb: ⣾ uploading wandb-summary.json 442B/442B (0.4s)
-wandb: ⣾ uploading config.yaml 2.8KB/2.8KB (0.4s)
-wandb: ⣷ uploading output.log 17.0KB/17.0KB (0.4s)
-wandb: ⣷ uploading wandb-summary.json 442B/442B (0.4s)
-wandb: ⣷ uploading config.yaml 2.8KB/2.8KB (0.4s)
-wandb: ⣯ uploading output.log 17.0KB/17.0KB (0.4s)
-wandb: ⣯ uploading wandb-summary.json 442B/442B (0.4s)
-wandb: ⣯ uploading config.yaml 2.8KB/2.8KB (0.4s)
-wandb: ⣟ uploading output.log 17.0KB/17.0KB (0.9s)
-wandb: ⣟ uploading wandb-summary.json 442B/442B (0.9s)
-wandb: ⡿ uploading output.log 17.0KB/17.0KB (0.9s)
-wandb: ⡿ uploading wandb-summary.json 442B/442B (0.9s)
-wandb: ⢿ uploading output.log 17.0KB/17.0KB (0.9s)
-wandb: ⢿ uploading wandb-summary.json 442B/442B (0.9s)
-wandb: ⣻ uploading output.log 17.0KB/17.0KB (0.9s)
-wandb: ⣻ uploading wandb-summary.json 442B/442B (0.9s)
-wandb: ⣽ uploading output.log 17.0KB/17.0KB (0.9s)
-wandb: ⣽ uploading wandb-summary.json 442B/442B (0.9s)
-wandb: ⣾ uploading history steps 47-47, summary, console lines 202-208 (0.2s)
-wandb: ⣷ uploading history steps 47-47, summary, console lines 202-208 (0.2s)
-wandb: ⣯ uploading history steps 47-47, summary, console lines 202-208 (0.2s)
+wandb: ⣷ updating run metadata (0.5s)
+wandb: ⣯ updating run metadata (0.5s)
+wandb: ⣟ updating run metadata (0.5s)
+wandb: ⡿ updating run metadata (0.5s)
+wandb: ⢿ updating run metadata (0.5s)
+wandb: ⣻ uploading output.log 17.0KB/17.0KB (0.2s)
+wandb: ⣻ uploading wandb-summary.json 442B/442B (0.2s)
+wandb: ⣻ uploading config.yaml 2.8KB/2.8KB (0.2s)
+wandb: ⣽ uploading output.log 17.0KB/17.0KB (0.2s)
+wandb: ⣽ uploading wandb-summary.json 442B/442B (0.2s)
+wandb: ⣽ uploading config.yaml 2.8KB/2.8KB (0.2s)
+wandb: ⣾ uploading output.log 17.0KB/17.0KB (0.2s)
+wandb: ⣾ uploading wandb-summary.json 442B/442B (0.2s)
+wandb: ⣾ uploading config.yaml 2.8KB/2.8KB (0.2s)
+wandb: ⣷ uploading output.log 17.0KB/17.0KB (0.2s)
+wandb: ⣷ uploading wandb-summary.json 442B/442B (0.2s)
+wandb: ⣷ uploading config.yaml 2.8KB/2.8KB (0.2s)
+wandb: ⣯ uploading output.log 17.0KB/17.0KB (0.2s)
+wandb: ⣯ uploading wandb-summary.json 442B/442B (0.2s)
+wandb: ⣯ uploading config.yaml 2.8KB/2.8KB (0.2s)
+wandb: ⣟ uploading output.log 17.0KB/17.0KB (0.7s)
+wandb: ⣟ uploading config.yaml 2.8KB/2.8KB (0.7s)
+wandb: ⡿ uploading output.log 17.0KB/17.0KB (0.7s)
+wandb: ⡿ uploading config.yaml 2.8KB/2.8KB (0.7s)
+wandb: ⢿ uploading output.log 17.0KB/17.0KB (0.7s)
+wandb: ⢿ uploading config.yaml 2.8KB/2.8KB (0.7s)
+wandb: ⣻ uploading output.log 17.0KB/17.0KB (0.7s)
+wandb: ⣻ uploading config.yaml 2.8KB/2.8KB (0.7s)
+wandb: ⣽ uploading output.log 17.0KB/17.0KB (0.7s)
+wandb: ⣽ uploading config.yaml 2.8KB/2.8KB (0.7s)
+wandb: ⣾ uploading output.log 17.0KB/17.0KB (1.2s)
+wandb: ⣾ uploading config.yaml 2.8KB/2.8KB (1.2s)
+wandb: ⣷ uploading output.log 17.0KB/17.0KB (1.2s)
+wandb: ⣷ uploading config.yaml 2.8KB/2.8KB (1.2s)
+wandb: ⣯ uploading output.log 17.0KB/17.0KB (1.2s)
+wandb: ⣯ uploading config.yaml 2.8KB/2.8KB (1.2s)
+wandb: ⣟ uploading output.log 17.0KB/17.0KB (1.2s)
+wandb: ⣟ uploading config.yaml 2.8KB/2.8KB (1.2s)
+wandb: ⡿ uploading output.log 17.0KB/17.0KB (1.2s)
+wandb: ⡿ uploading config.yaml 2.8KB/2.8KB (1.2s)
+wandb: ⢿ uploading history steps 47-47, summary, console lines 202-208 (0.4s)
+wandb: ⣻ uploading history steps 47-47, summary, console lines 202-208 (0.4s)
+wandb: ⣽ uploading history steps 47-47, summary, console lines 202-208 (0.4s)
+wandb: ⣾ uploading history steps 47-47, summary, console lines 202-208 (0.4s)
+wandb: ⣷ uploading history steps 47-47, summary, console lines 202-208 (0.4s)
+wandb: ⣯ uploading history steps 47-47, summary, console lines 202-208 (0.9s)
+wandb: ⣟ uploading history steps 47-47, summary, console lines 202-208 (0.9s)
+wandb: ⡿ uploading history steps 47-47, summary, console lines 202-208 (0.9s)
+wandb: ⢿ uploading history steps 47-47, summary, console lines 202-208 (0.9s)
+wandb: ⣻ uploading history steps 47-47, summary, console lines 202-208 (0.9s)
+wandb: ⣽ uploading history steps 47-47, summary, console lines 202-208 (1.4s)
+wandb: ⣾ uploading history steps 47-47, summary, console lines 202-208 (1.4s)
+wandb: ⣷ uploading history steps 47-47, summary, console lines 202-208 (1.4s)
+wandb: ⣯ uploading history steps 47-47, summary, console lines 202-208 (1.4s)
+wandb: ⣟ uploading history steps 47-47, summary, console lines 202-208 (1.4s)
+wandb: ⡿ uploading history steps 47-47, summary, console lines 202-208 (1.9s)
+wandb: ⢿ uploading history steps 47-47, summary, console lines 202-208 (1.9s)
+wandb: ⣻ uploading history steps 47-47, summary, console lines 202-208 (1.9s)
+wandb: ⣽ uploading history steps 47-47, summary, console lines 202-208 (1.9s)
+wandb: ⣾ uploading history steps 47-47, summary, console lines 202-208 (1.9s)
+wandb: ⣷ uploading history steps 47-47, summary, console lines 202-208 (2.4s)
+wandb: ⣯ uploading history steps 47-47, summary, console lines 202-208 (2.4s)
+wandb: ⣟ uploading history steps 47-47, summary, console lines 202-208 (2.4s)
+wandb: ⡿ uploading history steps 47-47, summary, console lines 202-208 (2.4s)
+wandb: ⢿ uploading history steps 47-47, summary, console lines 202-208 (2.4s)
+wandb: ⣻ uploading history steps 47-47, summary, console lines 202-208 (2.9s)
+wandb: ⣽ uploading history steps 47-47, summary, console lines 202-208 (2.9s)
+wandb: ⣾ uploading history steps 47-47, summary, console lines 202-208 (2.9s)
+wandb: ⣷ uploading history steps 47-47, summary, console lines 202-208 (2.9s)
+wandb: ⣯ uploading history steps 47-47, summary, console lines 202-208 (2.9s)
+wandb: ⣟ uploading history steps 47-47, summary, console lines 202-208 (3.4s)
+wandb: ⡿ uploading history steps 47-47, summary, console lines 202-208 (3.4s)
+wandb: ⢿ uploading history steps 47-47, summary, console lines 202-208 (3.4s)
+wandb: ⣻ uploading history steps 47-47, summary, console lines 202-208 (3.4s)
+wandb: ⣽ uploading history steps 47-47, summary, console lines 202-208 (3.4s)
+wandb: ⣾ uploading history steps 47-47, summary, console lines 202-208 (3.9s)
+wandb: ⣷ uploading history steps 47-47, summary, console lines 202-208 (3.9s)
+wandb: ⣯ uploading history steps 47-47, summary, console lines 202-208 (3.9s)
+wandb: ⣟ uploading history steps 47-47, summary, console lines 202-208 (3.9s)
+wandb: ⡿ uploading history steps 47-47, summary, console lines 202-208 (3.9s)
+wandb: ⢿ uploading history steps 47-47, summary, console lines 202-208 (4.4s)
+wandb: ⣻ uploading history steps 47-47, summary, console lines 202-208 (4.4s)
+wandb: ⣽ uploading history steps 47-47, summary, console lines 202-208 (4.4s)
+wandb: ⣾ uploading history steps 47-47, summary, console lines 202-208 (4.4s)
+wandb: ⣷ uploading history steps 47-47, summary, console lines 202-208 (4.4s)
+wandb: ⣯ uploading history steps 47-47, summary, console lines 202-208 (4.9s)
+wandb: ⣟ uploading history steps 47-47, summary, console lines 202-208 (4.9s)
+wandb: ⡿ uploading history steps 47-47, summary, console lines 202-208 (4.9s)
+wandb: ⢿ uploading history steps 47-47, summary, console lines 202-208 (4.9s)
+wandb: ⣻ uploading history steps 47-47, summary, console lines 202-208 (4.9s)
+wandb: ⣽ uploading history steps 47-47, summary, console lines 202-208 (5.4s)
+wandb: ⣾ uploading history steps 47-47, summary, console lines 202-208 (5.4s)
+wandb: ⣷ uploading history steps 47-47, summary, console lines 202-208 (5.4s)
+wandb: ⣯ uploading history steps 47-47, summary, console lines 202-208 (5.4s)
+wandb: ⣟ uploading history steps 47-47, summary, console lines 202-208 (5.4s)
+wandb: ⡿ uploading history steps 47-47, summary, console lines 202-208 (5.9s)
+wandb: ⢿ uploading history steps 47-47, summary, console lines 202-208 (5.9s)
+wandb: ⣻ uploading history steps 47-47, summary, console lines 202-208 (5.9s)
+wandb: ⣽ uploading history steps 47-47, summary, console lines 202-208 (5.9s)
+wandb: ⣾ uploading history steps 47-47, summary, console lines 202-208 (5.9s)
+wandb: ⣷ uploading history steps 47-47, summary, console lines 202-208 (6.4s)
+wandb: ⣯ uploading history steps 47-47, summary, console lines 202-208 (6.4s)
+wandb: ⣟ uploading history steps 47-47, summary, console lines 202-208 (6.4s)
+wandb: ⡿ uploading history steps 47-47, summary, console lines 202-208 (6.4s)
+wandb: ⢿ uploading history steps 47-47, summary, console lines 202-208 (6.4s)
+wandb: ⣻ uploading history steps 47-47, summary, console lines 202-208 (6.9s)
+wandb: ⣽ uploading history steps 47-47, summary, console lines 202-208 (6.9s)
+wandb: ⣾ uploading history steps 47-47, summary, console lines 202-208 (6.9s)
+wandb: ⣷ uploading history steps 47-47, summary, console lines 202-208 (6.9s)
+wandb: ⣯ uploading history steps 47-47, summary, console lines 202-208 (6.9s)
+wandb: ⣟ uploading history steps 47-47, summary, console lines 202-208 (7.4s)
+wandb: ⡿ uploading history steps 47-47, summary, console lines 202-208 (7.4s)
+wandb: ⢿ uploading history steps 47-47, summary, console lines 202-208 (7.4s)
+wandb: ⣻ uploading history steps 47-47, summary, console lines 202-208 (7.4s)
+wandb: ⣽ uploading history steps 47-47, summary, console lines 202-208 (7.4s)
+wandb: ⣾ uploading history steps 47-47, summary, console lines 202-208 (7.9s)
+wandb: ⣷ uploading history steps 47-47, summary, console lines 202-208 (7.9s)
+wandb: ⣯ uploading history steps 47-47, summary, console lines 202-208 (7.9s)
+wandb: ⣟ uploading history steps 47-47, summary, console lines 202-208 (7.9s)
+wandb: ⡿ uploading history steps 47-47, summary, console lines 202-208 (7.9s)
+wandb: ⢿ uploading history steps 47-47, summary, console lines 202-208 (8.4s)
+wandb: ⣻ uploading history steps 47-47, summary, console lines 202-208 (8.4s)
+wandb: ⣽ uploading history steps 47-47, summary, console lines 202-208 (8.4s)
+wandb: ⣾ uploading history steps 47-47, summary, console lines 202-208 (8.4s)
+wandb: ⣷ uploading history steps 47-47, summary, console lines 202-208 (8.4s)
+wandb: ⣯ uploading history steps 47-47, summary, console lines 202-208 (8.9s)
+wandb: ⣟ uploading history steps 47-47, summary, console lines 202-208 (8.9s)
+wandb: ⡿ uploading history steps 47-47, summary, console lines 202-208 (8.9s)
+wandb: ⢿ uploading history steps 47-47, summary, console lines 202-208 (8.9s)
+wandb: ⣻ uploading history steps 47-47, summary, console lines 202-208 (8.9s)
+wandb: ⣽ uploading history steps 47-47, summary, console lines 202-208 (9.4s)
+wandb: ⣾ uploading history steps 47-47, summary, console lines 202-208 (9.4s)
+wandb: ⣷ uploading history steps 47-47, summary, console lines 202-208 (9.4s)
+wandb: ⣯ uploading history steps 47-47, summary, console lines 202-208 (9.4s)
+wandb: ⣟ uploading history steps 47-47, summary, console lines 202-208 (9.4s)
+wandb: ⡿ uploading history steps 47-47, summary, console lines 202-208 (9.9s)
+wandb: ⢿ uploading history steps 47-47, summary, console lines 202-208 (9.9s)
+wandb: ⣻ uploading history steps 47-47, summary, console lines 202-208 (9.9s)
+wandb: ⣽ uploading history steps 47-47, summary, console lines 202-208 (9.9s)
+wandb: ⣾ uploading history steps 47-47, summary, console lines 202-208 (9.9s)
+wandb: ⣷ uploading history steps 47-47, summary, console lines 202-208 (10s)
+wandb: ⣯ uploading history steps 47-47, summary, console lines 202-208 (10s)
+wandb: ⣟ uploading history steps 47-47, summary, console lines 202-208 (10s)
+wandb: ⡿ uploading history steps 47-47, summary, console lines 202-208 (10s)
+wandb: ⢿ uploading history steps 47-47, summary, console lines 202-208 (10s)
+wandb: ⣻ uploading history steps 47-47, summary, console lines 202-208 (11s)
+wandb: ⣽ uploading history steps 47-47, summary, console lines 202-208 (11s)
+wandb: ⣾ uploading history steps 47-47, summary, console lines 202-208 (11s)
+wandb: ⣷ uploading history steps 47-47, summary, console lines 202-208 (11s)
+wandb: ⣯ uploading history steps 47-47, summary, console lines 202-208 (11s)
+wandb: ⣟ uploading history steps 47-47, summary, console lines 202-208 (11s)
+wandb: ⡿ uploading history steps 47-47, summary, console lines 202-208 (11s)
+wandb: ⢿ uploading history steps 47-47, summary, console lines 202-208 (11s)
+wandb: ⣻ uploading history steps 47-47, summary, console lines 202-208 (11s)
+wandb: ⣽ uploading history steps 47-47, summary, console lines 202-208 (11s)
+wandb: ⣾ uploading history steps 47-47, summary, console lines 202-208 (12s)
+wandb: ⣷ uploading history steps 47-47, summary, console lines 202-208 (12s)
+wandb: ⣯ uploading history steps 47-47, summary, console lines 202-208 (12s)
+wandb: ⣟ uploading history steps 47-47, summary, console lines 202-208 (12s)
+wandb: ⡿ uploading history steps 47-47, summary, console lines 202-208 (12s)
+wandb: ⢿ uploading history steps 47-47, summary, console lines 202-208 (12s)
+wandb: ⣻ uploading history steps 47-47, summary, console lines 202-208 (12s)
+wandb: ⣽ uploading history steps 47-47, summary, console lines 202-208 (12s)
+wandb: ⣾ uploading history steps 47-47, summary, console lines 202-208 (12s)
+wandb: ⣷ uploading history steps 47-47, summary, console lines 202-208 (12s)
+wandb: ⣯ uploading history steps 47-47, summary, console lines 202-208 (13s)
+wandb: ⣟ uploading history steps 47-47, summary, console lines 202-208 (13s)
+wandb: ⡿ uploading history steps 47-47, summary, console lines 202-208 (13s)
+wandb: ⢿ uploading history steps 47-47, summary, console lines 202-208 (13s)
+wandb: ⣻ uploading history steps 47-47, summary, console lines 202-208 (13s)
+wandb: ⣽ uploading history steps 47-47, summary, console lines 202-208 (13s)
+wandb: ⣾ uploading history steps 47-47, summary, console lines 202-208 (13s)
+wandb: ⣷ uploading history steps 47-47, summary, console lines 202-208 (13s)
+wandb: ⣯ uploading history steps 47-47, summary, console lines 202-208 (13s)
+wandb: ⣟ uploading history steps 47-47, summary, console lines 202-208 (13s)
+wandb: ⡿ uploading history steps 47-47, summary, console lines 202-208 (14s)
+wandb: ⢿ uploading history steps 47-47, summary, console lines 202-208 (14s)
+wandb: ⣻ uploading history steps 47-47, summary, console lines 202-208 (14s)
+wandb: ⣽ uploading history steps 47-47, summary, console lines 202-208 (14s)
+wandb: ⣾ uploading history steps 47-47, summary, console lines 202-208 (14s)
+wandb: ⣷ uploading history steps 47-47, summary, console lines 202-208 (14s)
+wandb: ⣯ uploading history steps 47-47, summary, console lines 202-208 (14s)
+wandb: ⣟ uploading history steps 47-47, summary, console lines 202-208 (14s)
+wandb: ⡿ uploading history steps 47-47, summary, console lines 202-208 (14s)
+wandb: ⢿ uploading history steps 47-47, summary, console lines 202-208 (14s)
+wandb: ⣻ uploading history steps 47-47, summary, console lines 202-208 (15s)
+wandb: ⣽ uploading history steps 47-47, summary, console lines 202-208 (15s)
+wandb: ⣾ uploading history steps 47-47, summary, console lines 202-208 (15s)
+wandb: ⣷ uploading history steps 47-47, summary, console lines 202-208 (15s)
+wandb: ⣯ uploading history steps 47-47, summary, console lines 202-208 (15s)
+wandb: ⣟ uploading history steps 47-47, summary, console lines 202-208 (15s)
+wandb: ⡿ uploading history steps 47-47, summary, console lines 202-208 (15s)
+wandb: ⢿ uploading history steps 47-47, summary, console lines 202-208 (15s)
+wandb: ⣻ uploading history steps 47-47, summary, console lines 202-208 (15s)
+wandb: ⣽ uploading history steps 47-47, summary, console lines 202-208 (15s)
+wandb: ⣾ uploading history steps 47-47, summary, console lines 202-208 (16s)
+wandb: ⣷ uploading history steps 47-47, summary, console lines 202-208 (16s)
+wandb: ⣯ uploading history steps 47-47, summary, console lines 202-208 (16s)
+wandb: ⣟ uploading history steps 47-47, summary, console lines 202-208 (16s)
+wandb: ⡿ uploading history steps 47-47, summary, console lines 202-208 (16s)
+wandb: ⢿ uploading history steps 47-47, summary, console lines 202-208 (16s)
+wandb: ⣻ uploading history steps 47-47, summary, console lines 202-208 (16s)
+wandb: ⣽ uploading history steps 47-47, summary, console lines 202-208 (16s)
+wandb: ⣾ uploading history steps 47-47, summary, console lines 202-208 (16s)
 wandb: 
 wandb: Run history:
 wandb:             best_val_acc ▁▁▂▂▃▃▄▄▅▅▆▆▆▇▇▇▇███████████████████████
@@ -292,19 +479,21 @@ wandb:                       lr 0.0
 wandb:     val/concept_accuracy 0.88983
 wandb:        val/task_accuracy 0.6776
 wandb: 
-wandb: 🚀 View run cub200_resnet18_ent0.3_ortho0.3_seed42 at: https://wandb.ai/paulohbl/cbm-leakage-mitigation/runs/fo1d4x51
+wandb: 🚀 View run cub200_resnet18_ent0.3_ortho0.3_seed42 at: https://wandb.ai/paulohbl/cbm-leakage-mitigation/runs/ncc0ed4n
 wandb: ⭐️ View project at: https://wandb.ai/paulohbl/cbm-leakage-mitigation
 wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
-wandb: Find logs at: ./wandb/run-20260317_212015-fo1d4x51/logs
-Evaluating Causal Concept Intervention...
-Plot saved as '/content/drive/My Drive/CBMLoss_Checkpoints/intervention_cub200_resnet18_ent0.3_ortho0.3_seed42_cub200_resnet18_ent0.3_ortho0.3_seed42_best_val_acc0.6793.png'
-
-Intervention Results:
-   Intervention Rate  Task Accuracy
-0                0.0       0.679323
-1                0.2       0.631688
-2                0.4       0.523645
-3                0.6       0.368139
-4                0.8       0.200035
-5                1.0       0.102520
-=== Pipeline Test Complete ===
+wandb: Find logs at: ./wandb/run-20260327_144714-ncc0ed4n/logs
+Evaluating Causal Concept Intervention (Dual Mode: Random vs Uncertainty)...
+Running Random Intervention Evaluation...
+Running Uncertainty Intervention Evaluation...
+Comparison Plot saved as '/content/drive/My Drive/CBMLoss_Checkpoints/intervention_cub200_resnet18_ent0.3_ortho0.3_seed42_cub200_resnet18_ent0.3_ortho0.3_seed42_best_acc0.6793.png'
+Results table saved as CSV: '/content/drive/My Drive/CBMLoss_Checkpoints/intervention_cub200_resnet18_ent0.3_ortho0.3_seed42_cub200_resnet18_ent0.3_ortho0.3_seed42_best_acc0.6793.csv'
+wandb: ERROR You must call wandb.init() before wandb.log()
+Traceback (most recent call last):
+  File "/content/CBMLoss/main.py", line 188, in <module>
+    main()
+  File "/content/CBMLoss/main.py", line 180, in main
+    wandb.log({"intervention_analysis": wandb.Table(dataframe=df)})
+  File "/usr/local/lib/python3.12/dist-packages/wandb/sdk/lib/preinit.py", line 38, in preinit_wrapper
+    raise wandb.Error(f"You must call wandb.init() before {name}()")
+wandb.errors.errors.Error: You must call wandb.init() before wandb.log()
