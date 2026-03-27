@@ -97,3 +97,6 @@ Para uma análise detalhada sobre o fenômeno de **Concept Leakage**, o **Trade-
 ## 📊 Monitoramento (WandB)
 
 O framework é integrado ao Weights & Biases. Você pode acompanhar as perdas de cada componente (`loss/leakage_entropy`, `loss/leakage_ortho`, etc.) em tempo real pelo dashboard.
+
+## WandB
+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

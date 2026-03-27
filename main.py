@@ -167,8 +167,6 @@ def main():
         print(f"\nLoading best model for intervention evaluation...")
         trainer.load_checkpoint(best_model_path, scheduler=scheduler)
     
-    wandb.finish()
-    
     # 6. Evaluate Concept Intervention
     print("Evaluating Causal Concept Intervention (Dual Mode: Random vs Uncertainty)...")
     # Include total epochs and best accuracy in image name
@@ -178,6 +176,8 @@ def main():
     
     # Log Table to WandB
     wandb.log({"intervention_analysis": wandb.Table(dataframe=df)})
+    
+    wandb.finish()
     
     print("\nIntervention Results Comparison:")
     print(df.to_string(index=False))
