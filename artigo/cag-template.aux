@@ -1,0 +1,71 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\Newlabel{cor1}{1}
+\citation{alvarez2018towards}
+\citation{koh2020concept}
+\Newlabel{1}{a}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\newlabel{sec:intro}{{1}{1}{Introduction}{section.1}{}}
+\def\@LN@column{2}
+\citation{margeloi2021do,havasi2022addressing}
+\citation{oikarinen2023label}
+\citation{koh2020concept}
+\citation{margeloi2021do}
+\citation{havasi2022addressing}
+\citation{oikarinen2023label}
+\citation{tishby2000information}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{2}{section.2}\protected@file@percent }
+\newlabel{sec:related}{{2}{2}{Related Work}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Concept Bottleneck Models (CBMs)}{2}{subsection.2.1}\protected@file@percent }
+\def\@LN@column{2}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Concept Leakage and the Semantic Shift}{2}{subsection.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Information Bottleneck Theory}{2}{subsection.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Proposed Method: CBMLoss}{2}{section.3}\protected@file@percent }
+\newlabel{sec:method}{{3}{2}{Proposed Method: CBMLoss}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Standard Formulation and the Leakage Vulnerability}{2}{subsection.3.1}\protected@file@percent }
+\citation{wah2011caltech}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Entropy Regularization ($\mathcal  {L}_{H}$)}{3}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Orthogonality Constraint ($\mathcal  {L}_{O}$)}{3}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Total Joint Loss}{3}{subsection.3.4}\protected@file@percent }
+\def\@LN@column{2}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.1}Algorithm Computational Complexity}{3}{subsubsection.3.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Evaluation Methodology}{3}{section.4}\protected@file@percent }
+\newlabel{sec:eval}{{4}{3}{Evaluation Methodology}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Dataset and Implementation Specifications}{3}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Dual-Mode Causal Intervention Protocol}{3}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Results and Discussion}{3}{section.5}\protected@file@percent }
+\newlabel{sec:results}{{5}{3}{Results and Discussion}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Qualitative Visualizations of Methodological Impact}{3}{subsection.5.1}\protected@file@percent }
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Concept Covariance Matrix Analysis ($\Sigma $). Left: Standard joint training yields highly entangled features where the network groups disparate concepts to encode shortcuts. Right: The CBMLoss model ($\lambda =0.5$) successfully decorrelates concepts, structurally guaranteeing dimensional independence mapping.}}{4}{figure.1}\protected@file@percent }
+\newlabel{fig:heatmap}{{1}{4}{Concept Covariance Matrix Analysis ($\Sigma $). Left: Standard joint training yields highly entangled features where the network groups disparate concepts to encode shortcuts. Right: The CBMLoss model ($\lambda =0.5$) successfully decorrelates concepts, structurally guaranteeing dimensional independence mapping}{figure.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Concept Activation Distirbutions. The baseline architecture exploits the continuous density around $0.5$ as a latency channel for task-critical leakage. $\mathcal  {L}_H$ securely forces the activations into boolean states, truncating fractional manipulation margins.}}{4}{figure.2}\protected@file@percent }
+\newlabel{fig:histo}{{2}{4}{Concept Activation Distirbutions. The baseline architecture exploits the continuous density around $0.5$ as a latency channel for task-critical leakage. $\mathcal {L}_H$ securely forces the activations into boolean states, truncating fractional manipulation margins}{figure.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}The Uncertainty Paradox: Definitive Proof of Leakage}{4}{subsection.5.2}\protected@file@percent }
+\def\@LN@column{2}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces The Uncertainty Paradox at $\lambda =0.5$. Targeted intervention exclusively onto uncertain concepts induces rapid task failure relative to random intervention, decisively establishing that the label predictor functionally relies upon the continuous uncertainty variance (leakage) rather than semantic truth.}}{4}{figure.3}\protected@file@percent }
+\newlabel{fig:paradox}{{3}{4}{The Uncertainty Paradox at $\lambda =0.5$. Targeted intervention exclusively onto uncertain concepts induces rapid task failure relative to random intervention, decisively establishing that the label predictor functionally relies upon the continuous uncertainty variance (leakage) rather than semantic truth}{figure.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Interventional Resilience and Trade-off Optimization}{4}{subsection.5.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Ablation Study: Expanding Regularization Complexity ($\lambda $)}}{4}{table.1}\protected@file@percent }
+\newlabel{tab:ablation}{{1}{4}{Ablation Study: Expanding Regularization Complexity ($\lambda $)}{table.1}{}}
+\bibstyle{cag-num-names}
+\bibdata{refs}
+\bibcite{alvarez2018towards}{{1}{2018}{{Alvarez-Melis and Jaakkola}}{{}}}
+\bibcite{koh2020concept}{{2}{2020}{{Koh et~al.}}{{Koh, Nguyen, Tang, Mussmann, Pierson, Kim et~al.}}}
+\bibcite{margeloi2021do}{{3}{2021}{{Margeloi et~al.}}{{Margeloi, Simidjievski, Jamnik and Weller}}}
+\bibcite{havasi2022addressing}{{4}{2022}{{Havasi et~al.}}{{Havasi, Parbhoo and Doshi-Velez}}}
+\bibcite{oikarinen2023label}{{5}{2023}{{Oikarinen et~al.}}{{Oikarinen, Das, Nguyen and Weng}}}
+\bibcite{tishby2000information}{{6}{2000}{{Tishby et~al.}}{{Tishby, Pereira and Bialek}}}
+\bibcite{wah2011caltech}{{7}{2011}{{Wah et~al.}}{{Wah, Branson, Welinder, Perona and Belongie}}}
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Empirical Random Concept Intervention across multiple values of $\lambda $. Elevated regularization magnitudes dictate preliminary task accuracy reduction but fundamentally yield superior structural resilience upon maximal test-time interventions.}}{5}{figure.4}\protected@file@percent }
+\newlabel{fig:ablation}{{4}{5}{Empirical Random Concept Intervention across multiple values of $\lambda $. Elevated regularization magnitudes dictate preliminary task accuracy reduction but fundamentally yield superior structural resilience upon maximal test-time interventions}{figure.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusion}{5}{section.6}\protected@file@percent }
+\newlabel{sec:conclusion}{{6}{5}{Conclusion}{section.6}{}}
+\def\@LN@column{2}
+\gdef \@abspage@last{5}

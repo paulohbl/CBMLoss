@@ -1,0 +1,77 @@
+\begin{thebibliography}{7}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\href}[2]{#2}
+\providecommand{\path}[1]{#1}
+\providecommand{\eprint}[1]{\href{http://arxiv.org/abs/#1}{\path{#1}}}
+\providecommand{\DOIprefix}{doi:}
+\providecommand{\ArXivprefix}{arXiv:}
+\providecommand{\URLprefix}{URL: }
+\providecommand{\Pubmedprefix}{pmid:}
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
+\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
+\providecommand{\BIBand}{and}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\undefined \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Article
+\bibitem[{Alvarez-Melis and Jaakkola(2018)}]{alvarez2018towards}
+\bibinfo{author}{Alvarez-Melis\xfnm[ D]}, \bibinfo{author}{Jaakkola\xfnm[ TS]}.
+\newblock \bibinfo{title}{Towards robust interpretability with self-explaining
+  neural networks}.
+\newblock \bibinfo{journal}{Advances in neural information processing systems}
+  \bibinfo{year}{2018};\bibinfo{volume}{31}.
+%Type = Inproceedings
+\bibitem[{Koh et~al.(2020)Koh, Nguyen, Tang, Mussmann, Pierson, Kim
+  et~al.}]{koh2020concept}
+\bibinfo{author}{Koh\xfnm[ PW]}, \bibinfo{author}{Nguyen\xfnm[ T]},
+  \bibinfo{author}{Tang\xfnm[ YS]}, \bibinfo{author}{Mussmann\xfnm[ S]},
+  \bibinfo{author}{Pierson\xfnm[ E]}, \bibinfo{author}{Kim\xfnm[ B]}, et~al.
+\newblock \bibinfo{title}{Concept bottleneck models}.
+\newblock In: \bibinfo{booktitle}{International conference on machine
+  learning}. \bibinfo{organization}{PMLR}; \bibinfo{year}{2020}, p.
+  \bibinfo{pages}{5338--5348}.
+%Type = Article
+\bibitem[{Margeloi et~al.(2021)Margeloi, Simidjievski, Jamnik and
+  Weller}]{margeloi2021do}
+\bibinfo{author}{Margeloi\xfnm[ A]}, \bibinfo{author}{Simidjievski\xfnm[ N]},
+  \bibinfo{author}{Jamnik\xfnm[ M]}, \bibinfo{author}{Weller\xfnm[ A]}.
+\newblock \bibinfo{title}{Do concept bottleneck models learn as intended?}
+\newblock \bibinfo{journal}{arXiv preprint arXiv:210504289}
+  \bibinfo{year}{2021};.
+%Type = Inproceedings
+\bibitem[{Havasi et~al.(2022)Havasi, Parbhoo and
+  Doshi-Velez}]{havasi2022addressing}
+\bibinfo{author}{Havasi\xfnm[ M]}, \bibinfo{author}{Parbhoo\xfnm[ S]},
+  \bibinfo{author}{Doshi-Velez\xfnm[ F]}.
+\newblock \bibinfo{title}{Addressing concept leakage in concept bottleneck
+  models}.
+\newblock In: \bibinfo{booktitle}{Advances in Neural Information Processing
+  Systems}; vol.~\bibinfo{volume}{35}. \bibinfo{year}{2022}, p.
+  \bibinfo{pages}{23315--23327}.
+%Type = Article
+\bibitem[{Oikarinen et~al.(2023)Oikarinen, Das, Nguyen and
+  Weng}]{oikarinen2023label}
+\bibinfo{author}{Oikarinen\xfnm[ T]}, \bibinfo{author}{Das\xfnm[ S]},
+  \bibinfo{author}{Nguyen\xfnm[ LM]}, \bibinfo{author}{Weng\xfnm[ TW]}.
+\newblock \bibinfo{title}{Label-free concept bottleneck models}.
+\newblock \bibinfo{journal}{arXiv preprint arXiv:230406129}
+  \bibinfo{year}{2023};.
+%Type = Article
+\bibitem[{Tishby et~al.(2000)Tishby, Pereira and
+  Bialek}]{tishby2000information}
+\bibinfo{author}{Tishby\xfnm[ N]}, \bibinfo{author}{Pereira\xfnm[ FC]},
+  \bibinfo{author}{Bialek\xfnm[ W]}.
+\newblock \bibinfo{title}{The information bottleneck method}.
+\newblock \bibinfo{journal}{arXiv preprint physics/0004057}
+  \bibinfo{year}{2000};.
+%Type = Article
+\bibitem[{Wah et~al.(2011)Wah, Branson, Welinder, Perona and
+  Belongie}]{wah2011caltech}
+\bibinfo{author}{Wah\xfnm[ C]}, \bibinfo{author}{Branson\xfnm[ S]},
+  \bibinfo{author}{Welinder\xfnm[ P]}, \bibinfo{author}{Perona\xfnm[ P]},
+  \bibinfo{author}{Belongie\xfnm[ S]}.
+\newblock \bibinfo{title}{The caltech-ucsd birds-200-2011 dataset}.
+\newblock \bibinfo{journal}{Computation \& Neural Systems Technical Report}
+  \bibinfo{year}{2011};(\bibinfo{number}{CNS-TR-2011-001}).
+
+\end{thebibliography}

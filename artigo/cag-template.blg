@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99e
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: cag-template.aux
+Reallocating 'name_of_file' (item size: 1) to 14 items.
+The style file: cag-num-names.bst
+Reallocating 'name_of_file' (item size: 1) to 5 items.
+Database file #1: refs.bib
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Warning--there's a number but no volume in wah2011caltech
+You've used 7 entries,
+            3138 wiz_defined-function locations,
+            702 strings with 6680 characters,
+and the built_in function-call counts, 6651 in all, are:
+= -- 533
+> -- 217
+< -- 4
++ -- 116
+- -- 56
+* -- 704
+:= -- 835
+add.period$ -- 23
+call.type$ -- 7
+change.case$ -- 39
+chr.to.int$ -- 7
+cite$ -- 8
+duplicate$ -- 584
+empty$ -- 546
+format.name$ -- 79
+if$ -- 1332
+int.to.chr$ -- 1
+int.to.str$ -- 8
+missing$ -- 78
+newline$ -- 52
+num.names$ -- 21
+pop$ -- 179
+preamble$ -- 1
+purify$ -- 35
+quote$ -- 0
+skip$ -- 170
+stack$ -- 0
+substring$ -- 550
+swap$ -- 282
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 42
+warning$ -- 1
+while$ -- 25
+width$ -- 0
+write$ -- 113
+(There was 1 warning)
