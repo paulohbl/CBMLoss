@@ -47,8 +47,8 @@ def find_qualitative_examples():
         for i, (images, concepts, labels) in enumerate(val_loader):
             images, concepts, labels = images.to(device), concepts.to(device), labels.to(device)
             
-            c_pred_01, y_pred_01 = model_01(images)
-            c_pred_05, y_pred_05 = model_05(images)
+            y_pred_01, c_pred_01 = model_01(images)
+            y_pred_05, c_pred_05 = model_05(images)
             
             # Get actual predictions
             pred_class_01 = torch.argmax(y_pred_01, dim=1).item()
