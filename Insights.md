@@ -48,6 +48,7 @@ Abaixo, os resultados consolidados para diferentes intensidades de regulariza√ß√
 
 | Lambda | Task Acc (0.0) | Concept Acc | Random 0.2 | Uncertainty 0.2 | Random 1.0 (Leakage) |
 | :--- | :---: | :---: | :---: | :---: | :---: |
+| **0.0** | 69.31% | 79.42% | 68.15% | 65.10% | 6.73% |
 | **0.1** | **72.35%** | 88.38% | 69.89% | 54.90% | 8.94% |
 | **0.3** | 67.93% | 88.98% | 63.16% | 47.32% | 10.25% |
 | **0.5** | 64.31% | **88.89%** | 58.02% | **40.11%** | 11.49% |
