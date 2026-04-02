@@ -26,7 +26,7 @@ def find_qualitative_examples():
         path_05 = os.path.join(checkpoint_dir, "cub200_resnet18_ent0.5_ortho0.5_seed42_cub200_resnet18_ent0.5_ortho0.5_seed42_best.pth")
 
     print("Loading Dataset...")
-    _, _, test_loader, num_concepts, num_classes = get_dataloaders("cub200", batch_size=1)
+    _, val_loader, num_concepts, num_classes = get_dataloaders("cub200", batch_size=1)
     
     print("Loading Model 0.1 (Leaky/Overfit)...")
     model_01 = ConceptBottleneckModel(num_concepts, num_classes, "resnet18").to(device)
@@ -42,7 +42,7 @@ def find_qualitative_examples():
     found_examples = 0
     
     with torch.no_grad():
-        for i, (images, concepts, labels) in enumerate(test_loader):
+        for i, (images, concepts, labels) in enumerate(val_loader):
             images, concepts, labels = images.to(device), concepts.to(device), labels.to(device)
             
             c_pred_01, y_pred_01 = model_01(images)
