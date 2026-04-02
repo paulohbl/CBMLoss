@@ -30,12 +30,14 @@ def find_qualitative_examples():
     
     print("Loading Model 0.1 (Leaky/Overfit)...")
     model_01 = ConceptBottleneckModel(num_concepts, num_classes, "resnet18").to(device)
-    model_01.load_state_dict(torch.load(path_01, map_location=device))
+    ckpt_01 = torch.load(path_01, map_location=device)
+    model_01.load_state_dict(ckpt_01.get('model_state_dict', ckpt_01))
     model_01.eval()
     
     print("Loading Model 0.5 (Clean/Robust)...")
     model_05 = ConceptBottleneckModel(num_concepts, num_classes, "resnet18").to(device)
-    model_05.load_state_dict(torch.load(path_05, map_location=device))
+    ckpt_05 = torch.load(path_05, map_location=device)
+    model_05.load_state_dict(ckpt_05.get('model_state_dict', ckpt_05))
     model_05.eval()
     
     print("Mining for interesting examples...")
