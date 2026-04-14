@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex cag-template"] 1775116517.83668 "cag-template.aux" "cag-template.bbl" "cag-template" 1775707307.35667 0
+["bibtex cag-template"] 1775116517.83668 "cag-template.aux" "cag-template.bbl" "cag-template" 1775711406.62101 0
   "./cag-num-names.bst" 1542861327 31773 a8dfda8bd1ae5a4b0b3fcd5b72b3a1b3 ""
   "./refs.bib" 1774902297 1883 51aec02c23111316862fe455c79e3e1e ""
-  "cag-template.aux" 1775707305 8728 9e023b1752f13426305d59b783ddec92 "pdflatex"
+  "cag-template.aux" 1775711405 8728 9e023b1752f13426305d59b783ddec92 "pdflatex"
   (generated)
   "cag-template.bbl"
   "cag-template.blg"
   (rewritten before read)
-["pdflatex"] 1775707298.57181 "c:/Users/IFMT/Meu Drive/Projetos/Python/CBMLoss/artigo/cag-template.tex" "cag-template.pdf" "cag-template" 1775707307.35861 0
+["pdflatex"] 1775711403.16056 "c:/Users/IFMT/Meu Drive/Projetos/Python/CBMLoss/artigo/cag-template.tex" "cag-template.pdf" "cag-template" 1775711406.62262 0
   "C:/Users/IFMT/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1774905245 84337 09a9ad228ef7e34d6f9cbf497373c91e ""
   "C:/Users/IFMT/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1774905215 13333003 619a7a4df383e2a4baf8393c5bc395bb ""
   "C:/Users/IFMT/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -147,13 +147,13 @@
   "C:/Users/IFMT/AppData/Local/Programs/MiKTeX/tex/latex/txfonts/utxsyc.fd" 977342760 310 4b5d6fe830337242ef847b3bff48ba21 ""
   "C:/Users/IFMT/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/IFMT/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "c:/Users/IFMT/Meu Drive/Projetos/Python/CBMLoss/artigo/cag-template.tex" 1775707292 29354 9e43978672a681bfef554f8867249eac ""
+  "c:/Users/IFMT/Meu Drive/Projetos/Python/CBMLoss/artigo/cag-template.tex" 1775711401 29354 e2b30b891e80d857da3f2ba454871f0a ""
   "cag-logo.pdf" 1542861327 111569 b1af98e17b75276c8c811f296c4770e0 ""
-  "cag-template.aux" 1775707305 8728 9e023b1752f13426305d59b783ddec92 "pdflatex"
+  "cag-template.aux" 1775711405 8728 9e023b1752f13426305d59b783ddec92 "pdflatex"
   "cag-template.bbl" 1775116518 3797 75f530ddd8ffd68106a474e4f70e163c "bibtex cag-template"
-  "cag-template.out" 1775707305 4694 c74b34086d5ab40969bbaea5a6734410 "pdflatex"
-  "cag-template.spl" 1775707299 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "cag-template.tex" 1775707292 29354 9e43978672a681bfef554f8867249eac ""
+  "cag-template.out" 1775711405 4694 c74b34086d5ab40969bbaea5a6734410 "pdflatex"
+  "cag-template.spl" 1775711403 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "cag-template.tex" 1775711401 29354 e2b30b891e80d857da3f2ba454871f0a ""
   "cag.sty" 1542861327 13168 4909948db0e1dbad66ad33ccc9826535 ""
   "elsarticle.cls" 1542861543 31590 61d674822fe063421163554a72c5e445 ""
   "elsevier-logo.pdf" 1542861327 57218 22f8df0628c4b4404be23a02b8e3eaa8 ""
