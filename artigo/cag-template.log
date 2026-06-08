@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.3.30)  9 APR 2026 01:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.3.30)  8 JUN 2026 15:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -632,7 +632,7 @@ Package: lineno 2026/03/08 line numbers on paragraphs v5.9
 \bframebox=\box59
 \@LN@amsmath@ams@eqpen=\count325
 )
-LaTeX Font Info:    Trying to load font information for OT1+txr on input line 22.
+LaTeX Font Info:    Trying to load font information for OT1+txr on input line 26.
  (C:\Users\IFMT\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 ) (C:\Users\IFMT\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
@@ -641,40 +641,40 @@ File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 ) (cag-template.aux)
 \openout1 = `cag-template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 22.
-LaTeX Font Info:    Trying to load font information for OML+txmi on input line 22.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 26.
+LaTeX Font Info:    Trying to load font information for OML+txmi on input line 26.
  (C:\Users\IFMT\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 22.
-LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 22.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 26.
+LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 26.
  (C:\Users\IFMT\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 22.
-LaTeX Font Info:    Trying to load font information for OMX+txex on input line 22.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 26.
+LaTeX Font Info:    Trying to load font information for OMX+txex on input line 26.
  (C:\Users\IFMT\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 22.
-LaTeX Font Info:    Trying to load font information for U+txexa on input line 22.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 26.
+LaTeX Font Info:    Trying to load font information for U+txexa on input line 26.
  (C:\Users\IFMT\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
  (C:\Users\IFMT\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count327
@@ -728,12 +728,12 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 22.
+Package hyperref Info: Link coloring OFF on input line 26.
 (cag-template.out) (cag-template.out)
 \@outlinefile=\write4
 \openout4 = `cag-template.out'.
 
-LaTeX Font Info:    Trying to load font information for TS1+txr on input line 40.
+LaTeX Font Info:    Trying to load font information for TS1+txr on input line 50.
  (C:\Users\IFMT\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
@@ -742,78 +742,78 @@ pdfTeX warning: pdflatex (file ./elsevier-logo.pdf): PDF inclusion: found PDF ve
 <elsevier-logo.pdf, id=87, 59.7432pt x 65.5248pt>
 File: elsevier-logo.pdf Graphic file (type pdf)
 <use elsevier-logo.pdf>
-Package pdftex.def Info: elsevier-logo.pdf  used on input line 46.
+Package pdftex.def Info: elsevier-logo.pdf  used on input line 56.
 (pdftex.def)             Requested size: 59.74303pt x 65.52463pt.
-LaTeX Font Info:    Trying to load font information for OT1+txss on input line 46.
+LaTeX Font Info:    Trying to load font information for OT1+txss on input line 56.
 (C:\Users\IFMT\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\ot1txss.fd
 File: ot1txss.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 46.
+(Font)              scaled to size 9.49997pt on input line 56.
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 8.07497pt on input line 46.
+(Font)              scaled to size 8.07497pt on input line 56.
 
 
-Package xcolor Warning: Incompatible color definition on input line 46.
+Package xcolor Warning: Incompatible color definition on input line 56.
 
 <cag-logo.pdf, id=90, 236.885pt x 299.1175pt>
 File: cag-logo.pdf Graphic file (type pdf)
 <use cag-logo.pdf>
-Package pdftex.def Info: cag-logo.pdf  used on input line 46.
+Package pdftex.def Info: cag-logo.pdf  used on input line 56.
 (pdftex.def)             Requested size: 57.52948pt x 72.46971pt.
 
-Overfull \hbox (1.02397pt too wide) in paragraph at lines 46--46
+Overfull \hbox (1.02397pt too wide) in paragraph at lines 56--56
 [][] 
  []
 
-LaTeX Font Info:    Trying to load font information for U+txmia on input line 46.
+LaTeX Font Info:    Trying to load font information for U+txmia on input line 56.
 (C:\Users\IFMT\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 46.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 56.
  (C:\Users\IFMT\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 46.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 56.
  (C:\Users\IFMT\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+txsyc on input line 46.
+LaTeX Font Info:    Trying to load font information for U+txsyc on input line 56.
  (C:\Users\IFMT\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 46.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 56.
  (C:\Users\IFMT\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Underfull \hbox (badness 10000) in alignment at lines 46--46
+Underfull \hbox (badness 10000) in alignment at lines 56--56
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 56--56
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 56--56
 
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 46--46
+Underfull \hbox (badness 10000) in alignment at lines 56--56
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 56--56
  
  []
 
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <10> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 50.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 60.
 
-Underfull \hbox (badness 4595) in paragraph at lines 55--56
+Underfull \hbox (badness 4595) in paragraph at lines 65--66
 []\OT1/txr/m/n/10 Particularly, \OT1/txr/m/it/10 post-hoc \OT1/txr/m/n/10 ex-plain-abil-ity meth-ods (such as
  []
 
@@ -823,48 +823,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 58.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\cnotenum' on input line 58.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 58.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@corref' on input line 58.
-
-[1{C:/Users/IFMT/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/IFMT/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
+ [1{C:/Users/IFMT/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/IFMT/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
 
 
  <./elsevier-logo.pdf> <./cag-logo.pdf>]
-Underfull \hbox (badness 7362) in paragraph at lines 78--80
+Underfull \hbox (badness 7362) in paragraph at lines 88--90
 []\OT1/txr/m/n/10 The lit-er-a-ture pre-dom-i-nantly dis-cusses three train-ing
  []
 
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 80.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 90.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 80.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 90.
 [2]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 108.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 108.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 108.
-
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 118.
@@ -878,7 +849,19 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 118.
 
 
-Underfull \hbox (badness 1178) in paragraph at lines 140--141
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 128.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 128.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 128.
+
+
+Underfull \hbox (badness 1178) in paragraph at lines 150--151
 \OT1/cmtt/m/n/10 has[]primary[]color[]blue\OT1/txr/m/n/10 ). This dataset is the stan-dard
  []
 
@@ -889,15 +872,15 @@ Package epstopdf Info: Source file: <figs/fig_covariance_heatmap.eps>
 (epstopdf)                    date: 2026-03-30 17:55:02
 (epstopdf)                    size: 36289 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=figs/fig_covariance_heatmap-eps-converted-to.pdf figs/fig_covariance_heatmap.eps>
-(epstopdf)             \includegraphics on input line 161.
+(epstopdf)             \includegraphics on input line 171.
 Package epstopdf Info: Output file is already uptodate.
-<figs/fig_covariance_heatmap-eps-converted-to.pdf, id=141, 990.70125pt x 415.5525pt>
+<figs/fig_covariance_heatmap-eps-converted-to.pdf, id=142, 990.70125pt x 415.5525pt>
 File: figs/fig_covariance_heatmap-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/fig_covariance_heatmap-eps-converted-to.pdf>
-Package pdftex.def Info: figs/fig_covariance_heatmap-eps-converted-to.pdf  used on input line 161.
+Package pdftex.def Info: figs/fig_covariance_heatmap-eps-converted-to.pdf  used on input line 171.
 (pdftex.def)             Requested size: 252.25394pt x 105.80913pt.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <8> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 162.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 172.
 [3]
 Package epstopdf Info: Source file: <figs/fig_activation_histogram.eps>
 (epstopdf)                    date: 2026-03-30 17:38:22
@@ -906,12 +889,12 @@ Package epstopdf Info: Source file: <figs/fig_activation_histogram.eps>
 (epstopdf)                    date: 2026-03-30 17:55:03
 (epstopdf)                    size: 24524 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=figs/fig_activation_histogram-eps-converted-to.pdf figs/fig_activation_histogram.eps>
-(epstopdf)             \includegraphics on input line 170.
+(epstopdf)             \includegraphics on input line 180.
 Package epstopdf Info: Output file is already uptodate.
-<figs/fig_activation_histogram-eps-converted-to.pdf, id=157, 996.72375pt x 342.27875pt>
+<figs/fig_activation_histogram-eps-converted-to.pdf, id=156, 996.72375pt x 342.27875pt>
 File: figs/fig_activation_histogram-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/fig_activation_histogram-eps-converted-to.pdf>
-Package pdftex.def Info: figs/fig_activation_histogram-eps-converted-to.pdf  used on input line 170.
+Package pdftex.def Info: figs/fig_activation_histogram-eps-converted-to.pdf  used on input line 180.
 (pdftex.def)             Requested size: 252.25394pt x 86.62447pt.
 Package epstopdf Info: Source file: <figs/fig_uncertainty_paradox.eps>
 (epstopdf)                    date: 2026-03-30 16:22:05
@@ -920,15 +903,15 @@ Package epstopdf Info: Source file: <figs/fig_uncertainty_paradox.eps>
 (epstopdf)                    date: 2026-03-30 17:14:07
 (epstopdf)                    size: 23807 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=figs/fig_uncertainty_paradox-eps-converted-to.pdf figs/fig_uncertainty_paradox.eps>
-(epstopdf)             \includegraphics on input line 184.
+(epstopdf)             \includegraphics on input line 194.
 Package epstopdf Info: Output file is already uptodate.
-<figs/fig_uncertainty_paradox-eps-converted-to.pdf, id=159, 569.12625pt x 418.56375pt>
+<figs/fig_uncertainty_paradox-eps-converted-to.pdf, id=158, 569.12625pt x 418.56375pt>
 File: figs/fig_uncertainty_paradox-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/fig_uncertainty_paradox-eps-converted-to.pdf>
-Package pdftex.def Info: figs/fig_uncertainty_paradox-eps-converted-to.pdf  used on input line 184.
+Package pdftex.def Info: figs/fig_uncertainty_paradox-eps-converted-to.pdf  used on input line 194.
 (pdftex.def)             Requested size: 252.25394pt x 185.5226pt.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <9> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 205.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 215.
 Package epstopdf Info: Source file: <figs/fig_lambda_ablation.eps>
 (epstopdf)                    date: 2026-03-30 16:22:05
 (epstopdf)                    size: 41352 bytes
@@ -936,28 +919,28 @@ Package epstopdf Info: Source file: <figs/fig_lambda_ablation.eps>
 (epstopdf)                    date: 2026-03-30 17:14:08
 (epstopdf)                    size: 24464 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=figs/fig_lambda_ablation-eps-converted-to.pdf figs/fig_lambda_ablation.eps>
-(epstopdf)             \includegraphics on input line 220.
+(epstopdf)             \includegraphics on input line 230.
 Package epstopdf Info: Output file is already uptodate.
-<figs/fig_lambda_ablation-eps-converted-to.pdf, id=162, 635.37375pt x 418.56375pt>
+<figs/fig_lambda_ablation-eps-converted-to.pdf, id=161, 635.37375pt x 418.56375pt>
 File: figs/fig_lambda_ablation-eps-converted-to.pdf Graphic file (type pdf)
 <use figs/fig_lambda_ablation-eps-converted-to.pdf>
-Package pdftex.def Info: figs/fig_lambda_ablation-eps-converted-to.pdf  used on input line 220.
+Package pdftex.def Info: figs/fig_lambda_ablation-eps-converted-to.pdf  used on input line 230.
 (pdftex.def)             Requested size: 252.25394pt x 166.17711pt.
  [4 <./figs/fig_covariance_heatmap-eps-converted-to.pdf> <./figs/fig_activation_histogram-eps-converted-to.pdf> <./figs/fig_uncertainty_paradox-eps-converted-to.pdf>]
-<figs/qualitative_example_1.png, id=343, 292.4526pt x 334.3692pt>
+<figs/qualitative_example_1.png, id=342, 292.4526pt x 334.3692pt>
 File: figs/qualitative_example_1.png Graphic file (type png)
 <use figs/qualitative_example_1.png>
-Package pdftex.def Info: figs/qualitative_example_1.png  used on input line 245.
+Package pdftex.def Info: figs/qualitative_example_1.png  used on input line 255.
 (pdftex.def)             Requested size: 167.20634pt x 191.17915pt.
-<figs/qualitative_example_2.png, id=345, 292.4526pt x 334.3692pt>
+<figs/qualitative_example_2.png, id=344, 292.4526pt x 334.3692pt>
 File: figs/qualitative_example_2.png Graphic file (type png)
 <use figs/qualitative_example_2.png>
-Package pdftex.def Info: figs/qualitative_example_2.png  used on input line 249.
+Package pdftex.def Info: figs/qualitative_example_2.png  used on input line 259.
 (pdftex.def)             Requested size: 167.20634pt x 191.17915pt.
-<figs/qualitative_example_3.png, id=346, 292.4526pt x 334.3692pt>
+<figs/qualitative_example_3.png, id=345, 292.4526pt x 334.3692pt>
 File: figs/qualitative_example_3.png Graphic file (type png)
 <use figs/qualitative_example_3.png>
-Package pdftex.def Info: figs/qualitative_example_3.png  used on input line 253.
+Package pdftex.def Info: figs/qualitative_example_3.png  used on input line 263.
 (pdftex.def)             Requested size: 167.20634pt x 191.17915pt.
  [5 <./figs/fig_lambda_ablation-eps-converted-to.pdf>] (cag-template.bbl) [6
 
@@ -970,17 +953,17 @@ Package rerunfilecheck Info: File `cag-template.out' has not changed.
 (rerunfilecheck)             Checksum: C74B34086D5AB40969BBAEA5A6734410;4694.
  ) 
 Here is how much of TeX's memory you used:
- 12847 strings out of 467871
- 194902 string characters out of 5418860
- 626006 words of memory out of 5000000
- 41430 multiletter control sequences out of 15000+600000
+ 12848 strings out of 467871
+ 194927 string characters out of 5418860
+ 624013 words of memory out of 5000000
+ 41432 multiletter control sequences out of 15000+600000
  683773 words of font info for 176 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,16n,79p,1407b,459s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,16n,79p,1407b,457s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/IFMT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/IFMT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/Users/IFMT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/IFMT/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtcxr.pfb><C:/Users/IFMT/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxi.pfb><C:/Users/IFMT/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxmi.pfb><C:/Users/IFMT/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxr.pfb><C:/Users/IFMT/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txex.pfb><C:/Users/IFMT/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txsy.pfb><C:/Users/IFMT/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txsyc.pfb><C:/Users/IFMT/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/IFMT/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/IFMT/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/IFMT/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/IFMT/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on cag-template.pdf (6 pages, 1437118 bytes).
+Output written on cag-template.pdf (6 pages, 1433644 bytes).
 PDF statistics:
- 495 PDF objects out of 1000 (max. 8388607)
- 53 named destinations out of 1000 (max. 500000)
+ 494 PDF objects out of 1000 (max. 8388607)
+ 52 named destinations out of 1000 (max. 500000)
  214 words of extra memory for PDF output out of 10000 (max. 10000000)
 

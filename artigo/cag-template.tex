@@ -19,6 +19,10 @@
 
 \journal{Computers \& Graphics}
 
+%% Flag to toggle anonymization
+\newif\ifanonymous
+\anonymoustrue % Set to \anonymousfalse to show authors/affiliations
+
 \begin{document}
 
 \verso{Preprint Submitted for review to SIBGRAPI}
@@ -27,11 +31,17 @@
 
 \title{Mitigating Concept Leakage in Concept Bottleneck Models via Structural Orthogonality and Entropy Regularization}
 
-\author[1]{Paulo \snm{H. B. Lopes}\corref{cor1}}
-\cortext[cor1]{Corresponding author}
-\emailauthor{paulo.lopes@ifmt.edu.br}{P. H. B. Lopes}
-    
-\address[1]{Instituto Federal de Mato Grosso (IFMT), Brazil}
+\ifanonymous
+  \author[1]{XXXXXX}
+  \emailauthor{XXXXXX}{XXXXXX}
+  \address[1]{XXXXXX}
+\else
+  \author[1]{Paulo \snm{H. B. Lopes}\corref{cor1}}
+  \cortext[cor1]{Corresponding author}
+  \emailauthor{paulo.lopes@ifmt.edu.br}{P. H. B. Lopes}
+      
+  \address[1]{Instituto Federal de Mato Grosso (IFMT), Brazil}
+\fi
 
 \received{\today}
 
