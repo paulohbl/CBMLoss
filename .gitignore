@@ -19,3 +19,7 @@ wandb/
 venv/
 env/
 .env/
+
+# Model Checkpoints
+checkpoints/
+*.pth
