@@ -1,5 +1,6 @@
 import os
 import urllib.request
+import shutil
 import tarfile
 import pandas as pd
 import numpy as np
@@ -66,23 +67,56 @@ def download_and_prepare_cub200(base_dir="data/CUB_200_2011"):
     Downloads the CUB-200-2011 dataset (1.1GB) and pre-processes the attributes 
     into a flat CSV for CBM training.
     """
+    csv_train = os.path.join(base_dir, "train.csv")
+    csv_val = os.path.join(base_dir, "val.csv")
+    
+    # If already fully prepared, exit immediately
+    if os.path.exists(csv_train) and os.path.exists(csv_val):
+        print(f"Dataset CUB-200 already prepared in {base_dir}!")
+        return
+
     os.makedirs(base_dir, exist_ok=True)
     tar_path = os.path.join(base_dir, "CUB_200_2011.tgz")
     
+    # Check if user already copied CUB_200_2011.tgz to Google Drive
+    drive_candidates = [
+        "/content/drive/MyDrive/CBMLoss_Data/CUB_200_2011.tgz",
+        "/content/drive/MyDrive/CBMLoss_Checkpoints/CUB_200_2011.tgz",
+        "/content/drive/MyDrive/CUB_200_2011.tgz"
+    ]
+    for d_path in drive_candidates:
+        if os.path.exists(d_path) and not os.path.exists(tar_path):
+            print(f"Encontrado arquivo no Google Drive: {d_path}. Copiando para {tar_path}...")
+            import shutil
+            shutil.copy2(d_path, tar_path)
+            break
+
     if not os.path.exists(os.path.join(base_dir, "images.txt")):
-        print("Downloading CUB-200-2011 (this may take a while)...")
-        url = "https://data.caltech.edu/records/65de6-vp158/files/CUB_200_2011.tgz"
-        urllib.request.urlretrieve(url, tar_path)
+        if not os.path.exists(tar_path) or os.path.getsize(tar_path) < 1_000_000_000:
+            print("Baixando CUB-200-2011 (~1.1 GB com barra de progresso)...")
+            url = "https://data.caltech.edu/records/65de6-vp158/files/CUB_200_2011.tgz"
+            try:
+                import requests
+                headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
+                with requests.get(url, stream=True, headers=headers, timeout=30) as r:
+                    r.raise_for_status()
+                    total_size = int(r.headers.get("content-length", 0))
+                    with open(tar_path, "wb") as f, tqdm(total=total_size, unit="B", unit_scale=True, desc="CUB_200_2011.tgz") as pbar:
+                        for chunk in r.iter_content(chunk_size=1024 * 1024):
+                            if chunk:
+                                f.write(chunk)
+                                pbar.update(len(chunk))
+            except Exception as e:
+                print(f"Aviso no download via requests ({e}), tentando urllib com User-Agent...")
+                req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+                with urllib.request.urlopen(req) as response, open(tar_path, "wb") as out_file:
+                    shutil.copyfileobj(response, out_file)
         
-        print("Extracting...")
+        print("Extraindo CUB_200_2011.tgz...")
         with tarfile.open(tar_path, "r:gz") as tar:
             tar.extractall(path=os.path.dirname(base_dir))
             
     # Process attributes if CSV not ready
-    csv_train = os.path.join(base_dir, "train.csv")
-    csv_val = os.path.join(base_dir, "val.csv")
-    
-    if not os.path.exists(csv_train):
         print("Processing CUB-200-2011 attributes into CSV format...")
         
         images = pd.read_csv(os.path.join(base_dir, "images.txt"), sep=' ', names=['img_id', 'image_name'])
