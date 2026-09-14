@@ -58,13 +58,23 @@ def main():
     # Setup Reproducibility
     set_seed(args.seed)
     
-    if args.offline or os.environ.get("WANDB_MODE") == "offline":
-        os.environ["WANDB_MODE"] = "offline"
-    elif not os.environ.get("WANDB_API_KEY") and not os.path.exists(os.path.expanduser("~/.netrc")):
-        import sys
-        if not sys.stdin.isatty():
-            print("W&B: Sessão não-interativa detectada sem chave de API. Ativando modo offline automaticamente.")
-            os.environ["WANDB_MODE"] = "offline"
+    # Determine WandB mode
+    wandb_mode = os.environ.get("WANDB_MODE")
+    if args.offline:
+        wandb_mode = "offline"
+    elif not wandb_mode:
+        if os.environ.get("WANDB_API_KEY") or os.path.exists(os.path.expanduser("~/.netrc")):
+            wandb_mode = "online"
+        else:
+            import sys
+            if not sys.stdin.isatty():
+                print("W&B: Sessão não-interativa sem chave de API. Ativando modo offline automaticamente.")
+                wandb_mode = "offline"
+            else:
+                wandb_mode = "online"
+                
+    os.environ["WANDB_MODE"] = wandb_mode
+    print(f"W&B Mode: {wandb_mode}")
         
     print(f"=== Starting CBMLoss Framework Test on {args.dataset.upper()} Dataset ===")
     device = torch.device(args.device)
@@ -117,6 +127,7 @@ def main():
         config=wandb_config,
         id=args.wandb_id,
         resume="allow",
+        mode=wandb_mode,
         name=run_tag if args.wandb_id is None else None
     )
     wandb.config.update({"model": model.__class__.__name__}, allow_val_change=True)
