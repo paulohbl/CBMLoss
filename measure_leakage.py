@@ -68,13 +68,34 @@ def main():
     _, val_loader, num_concepts, num_classes = get_dataloaders(args.dataset, batch_size=args.batch_size)
 
     # 2. Identify Checkpoint Files
-    if not os.path.exists(args.checkpoint_dir):
-        # Fallback to local checkpoints folder if path not found
-        args.checkpoint_dir = "checkpoints"
-        
-    if not os.path.exists(args.checkpoint_dir):
-        print(f"Error: Checkpoint dir '{args.checkpoint_dir}' does not exist.")
+    candidates = [
+        args.checkpoint_dir,
+        "checkpoints",
+        "/content/drive/MyDrive/CBMLoss_Checkpoints",
+        "/content/drive/My Drive/CBMLoss_Checkpoints",
+        "/content/drive/Meu Drive/CBMLoss_Checkpoints",
+        "G:/Meu Drive/CBMLoss_Checkpoints"
+    ]
+    resolved_dir = None
+    for cand in candidates:
+        if cand and os.path.exists(cand):
+            # Check if it actually contains .pth files
+            if any(f.endswith(".pth") for f in os.listdir(cand)):
+                resolved_dir = cand
+                break
+
+    if resolved_dir is None:
+        for cand in candidates:
+            if cand and os.path.exists(cand):
+                resolved_dir = cand
+                break
+
+    if resolved_dir is None or not os.path.exists(resolved_dir):
+        print(f"Error: Nenhum diretório de checkpoints válido encontrado em: {candidates}")
         return
+
+    args.checkpoint_dir = resolved_dir
+    print(f"Usando diretório de checkpoints: {args.checkpoint_dir}")
 
     checkpoint_files = [f for f in os.listdir(args.checkpoint_dir) if f.endswith("_best.pth")]
     print(f"Found {len(checkpoint_files)} checkpoints in {args.checkpoint_dir}")
