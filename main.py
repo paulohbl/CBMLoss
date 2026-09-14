@@ -58,8 +58,13 @@ def main():
     # Setup Reproducibility
     set_seed(args.seed)
     
-    if args.offline:
+    if args.offline or os.environ.get("WANDB_MODE") == "offline":
         os.environ["WANDB_MODE"] = "offline"
+    elif not os.environ.get("WANDB_API_KEY") and not os.path.exists(os.path.expanduser("~/.netrc")):
+        import sys
+        if not sys.stdin.isatty():
+            print("W&B: Sessão não-interativa detectada sem chave de API. Ativando modo offline automaticamente.")
+            os.environ["WANDB_MODE"] = "offline"
         
     print(f"=== Starting CBMLoss Framework Test on {args.dataset.upper()} Dataset ===")
     device = torch.device(args.device)
